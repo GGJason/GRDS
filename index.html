@@ -1,66 +1,71 @@
 <!DOCTYPE html>
 <!--For PC & Desktop Version-->
-
 <html>
-<head>
-	<title>BGBIM - Green Roof Data Station</title>
-	<script src="./path/to/dropzone.js"></script>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-   	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" href="index.css">
-	<link href="css/bootstrap.min.css" rel="stylesheet">
-</head>
-<body>
-	<div id="head">
-		<h1>Green Roof Data Station</h1><br><br>
-	</div>
-	
-	<div id="menu">
-		<form action="upload.php" method="post" enctype="multipart/form-data" id="inputForm">
-			Select image to upload:
-			<input type="file" name="fileToUpload"  id="fileToUpload"></input><br>
-			<input type="submit" value="Upload Image" name="submit"></input><br>
-		</form> 
-
-		<br><br>
-
-		<form id="timeForm">
-			Starting Time:<br>
-			<select id="startH"></select>
-			<select id="startD"></select>
-			<select id="startM"></select><br>
-			Endding Time:<br>
-			<select id="endH"></select>
-			<select id="endD"></select>
-			<select id="endM"></select><br>
-			<input type="button" id="download" value="Download"></input>
-			<input type="button" id="draw" value="Draw"> </input><br>
-		</form>
-
-		<form id="selectForm">
-			<input type="checkbox">Greenroof Data</input><br>
-				<input type="checkbox">Greenroof A</input><br>
-				<input type="checkbox">Greenroof B</input><br>
-				<input type="checkbox">Greenroof C</input><br>
-			<input type="checkbox"></input>
-		</form>
-	</div>
-
-	<div id="main">
-		Welcome To Blue Green BIM.
-		This is the data station for greenroof experiment
-	</div>
-
-	<div id="foot">
-	Start from 2015<br>
-	Designed by Kyra<br>
-	Developed by Kyra and GGJason of BGBIM
-	</div>
-	<!-- jQuery (Bootstrap 所有外掛均需要使用) -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-	<!-- 依需要參考已編譯外掛版本（如下），或各自獨立的外掛版本 -->
-	<script src="js/bootstrap.min.js"></script>
-	
-</body>
+	<head>
+		<title>BGBIM - Green Roof Data Station</title>
+		<script src="./path/to/dropzone.js"></script>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="css/index.css">
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+	</head>
+	<body>
+		<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+			<div class="container">
+				<div class="navbar-header"><button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button> <a class="navbar-brand" href="https://kkbruce.tw/bs3/Examples/starter-template#">Blue Green BIM</a></div>
+				<div id="navbar" class="collapse navbar-collapse">
+					<ul class="nav navbar-nav">
+						<li class="active"><a href="https://kkbruce.tw/bs3/Examples/starter-template#">Home</a></li>
+						<li><a href="https://kkbruce.tw/bs3/Examples/starter-template#about">About</a></li>
+						<li><a href="https://kkbruce.tw/bs3/Examples/starter-template#contact">Contact</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<div class="container">
+			<div class="starter-template">
+				<div id="menu">
+					<form action="upload.php" method="post" enctype="multipart/form-data" id="inputForm">
+						Select image to upload:
+						<input type="file" name="fileToUpload"  id="fileToUpload" width="40"></input><br>
+						<input type="submit" value="Upload Image" name="submit" class="btn btn-sm btn-primary"></input><br>
+					</form>
+					<br><br>
+					<form id="timeForm">
+						Starting Time:<br>
+						<select id="startH"></select>
+						<select id="startD"></select>
+						<select id="startM"></select><br>
+						Endding Time:<br>
+						<select id="endH"></select>
+						<select id="endD"></select>
+						<select id="endM"></select><br>
+						<input type="button" id="download" value="Download" class="btn btn-primary"></input>
+						<input type="button" id="draw" value="Draw" class="btn btn-primary"> </input><br>
+					</form>
+					<form id="selectForm">
+						<input type="checkbox">Greenroof Data</input><br>
+						<input type="checkbox">Greenroof A</input><br>
+						<input type="checkbox">Greenroof B</input><br>
+						<input type="checkbox">Greenroof C</input><br>
+						<input type="checkbox"></input>
+					</form>
+				</div>
+				<div id="main">
+					<h3>Green Roof Data Station</h3>
+					Welcome To Blue Green BIM.
+					This is the data station for greenroof experiment
+				</div>
+				<div id="foot">
+					Start from 2015<br>
+					Designed by Kyra<br>
+					Developed by Kyra and GGJason of BGBIM
+				</div>
+			</div>
+		</div>
+		<script src="./Starter Template for Bootstrap_files/jquery.min.js"></script>
+		<script src="./Starter Template for Bootstrap_files/bootstrap.min.js"></script>
+		<script src="./Starter Template for Bootstrap_files/ie10-viewport-bug-workaround.js"></script>
+	</body>
 </html>
