@@ -8,6 +8,9 @@ For Blue Green BIM in Taiwan
 # Using
 1. Bootstrap
 2. JQuery
+3. PHP
+4. MariaDB
+
 
 # Issues
 1. File Upload and Update Database
