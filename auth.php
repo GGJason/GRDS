@@ -15,10 +15,19 @@
 
 	//$row = mysqli_fetch_row($result); //將陣列以數字排列索引
 
-	if ($_POST['passwd']== $row['passwd']) {
-		echo "Success";
-		echo "You are ". $row($result)['nick'];
+	if (($_POST['passwd']== $row['passwd']) && ($_POST['name']!='')&&($_POST['passwd']!='')) {
+		//echo "Success";
+		session_start();
+		$_SESSION['id']=$row['id'];
+		$_SESSION['nick']=$row['nick'];
+		$_SESSION['login']='OK';
+		echo "You are ". $_SESSION['nick'];
+		header("Location: index.php");
 	}
-	else echo "Failed";
+	else 
+	{
+		echo "Failed";
+		$_SESSION['login']='Fail';
+	}
  ?>
 

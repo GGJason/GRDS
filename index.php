@@ -9,6 +9,10 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" type="text/css" href="css/index.css">
 		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<?php session_start();
+			if($_SESSION['login']=='OK');
+			else echo "<style>.secure{visibility:hidden;}</style>"; 		
+		?>
 	</head>
 	<body>
 		<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
@@ -19,20 +23,38 @@
 						<li class="active"><a href="https://kkbruce.tw/bs3/Examples/starter-template#">Home</a></li>
 						<li><a href="https://kkbruce.tw/bs3/Examples/starter-template#about">About</a></li>
 						<li><a href="https://kkbruce.tw/bs3/Examples/starter-template#contact">Contact</a></li>
+						
 					</ul>
+					<?php 
+						if($_SESSION['login']=='OK') {
+						echo "<form action='logout.php' class='log'><button>Logout</button></form></li>";
+						}
+						else{
+							echo "<form action='auth.php' method='post' class='log'>";
+								echo "<input type='text' name='name' id='name' value='username'></input>";
+								echo "<input type='password' name='passwd' id='passwd' value='password'></input>";
+								echo "<input type='submit' id='authsubmit' name = 'submit'></input>";
+							echo "</form>";
+						}
+				?>
 				</div>
+
 			</div>
 		</nav>
-		<div class="container">
+		
+		<div class="container" id="interface">
 			<div class="starter-template">
 				<div id="menu">
-					<form action="upload.php" method="post" enctype="multipart/form-data" id="inputForm" >
+					
+					
+					<br>
+					<form action="upload.php" method="post" enctype="multipart/form-data" id="inputForm" class="secure">
 						<p>Select image to upload:</p>
 						<input type="file" name="fileToUpload"  id="fileToUpload"style="width:50%;float:left"></input><br>
 						<input type="submit" value="Upload Image" name="submit" class="btn btn-sm btn-primary" style="float:left"></input><br>
 					</form>
 					<br><br>
-					<form id="timeForm">
+					<form id="timeForm" class="secure">
 						Starting Time:<br>
 						<select id="startH"></select>
 						<select id="startD"></select>
@@ -44,7 +66,7 @@
 						<input type="button" id="download" value="Download" class="btn btn-primary" ></input>
 						<input type="button" id="draw" value="Draw" class="btn btn-primary"> </input><br>
 					</form>
-					<form id="selectForm">
+					<form id="selectForm" class="secure">
 						<input type="checkbox">Greenroof Data</input><br>
 						<input type="checkbox">Greenroof A</input><br>
 						<input type="checkbox">Greenroof B</input><br>
@@ -56,6 +78,11 @@
 					<h3>Green Roof Data Station</h3>
 					Welcome To Blue Green BIM.
 					This is the data station for greenroof experiment
+					<?php 
+						if($_SESSION['login']=='OK') {
+							echo "Welcome to GRDS of BGBIM TW,". $_SESSION['nick'];
+							
+					}?>
 				</div>
 			</div>
 		</div>

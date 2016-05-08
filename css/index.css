@@ -52,3 +52,14 @@ footer{
 input{
 	padding-top: 2pt;
 }
+#name,#passwd{
+	max-width:80pt;
+}
+#authsubmit{
+	max-width: 50pt;
+}
+.log{
+	position: absolute;
+	right: 50pt;
+	height: auto;
+}
