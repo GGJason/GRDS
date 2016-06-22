@@ -1,7 +1,5 @@
 
 <?php
-	ini_set("display_errors", "On"); // 顯示錯誤是否打開( On=開, Off=關 )
-	error_reporting(E_ALL & ~E_NOTICE);
 	$link=mysqli_connect("localhost","bgbim","bgbimdb") or die ("無法開啟Mysql資料庫連結"); //建立mysql資料庫連結
 
 	mysqli_select_db($link, "bgbim"); //選擇資料庫bgbim
