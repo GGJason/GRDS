@@ -1,20 +1,55 @@
 <?php
+	ini_set("display_errors", "On");
+	include ("log.php");
 
 	if(!(is_dir("./uploads/")))mkdir("uploads",0777);
 	$time = time();
-	$target_dir = "uploads/";
-	$file_name=$time . basename($_FILES["fileToUpload"]["name"]);
+
+
+	$Date = date_create();
+	$interval=date_format($Date,"ym");
+	if(!(is_dir("./Uploads/")))mkdir("./Uploads/",0777);
+	if(!(is_dir("./Uploads/"+$interval."/")))mkdir("./Uploads/".$interval."/",0777);
+	$target_dir = "/Uploads/".$interval."/";
+
+	$fileName=$time . basename($_FILES["fileToUpload"]["name"]);
 	$info = pathinfo($target_file);
 	$FileType = $info['extension'];
 
 	$target_file = $target_dir . $time . basename($_FILES["fileToUpload"]["name"]);
 	$uploadOk = 1;
 
+	//Check File Type
+	if(isset($_POST["submit"])) {
+	}
 
+	// Check file size
+/*	if ($_FILES["fileToUpload"]["size"] > 500000) {
+    	echo "Sorry, your file is too large.";
+    	$uploadOk = 0;
+	}*/
+	// Allow certain file formats
+/*	if($imageFileType != "jpg" && $imageFileType != "png" && $imageFileType != "jpeg"&& $imageFileType != "gif" ) {
+    	echo "Sorry, only JPG, JPEG, PNG & GIF files are allowed.";
+    	$uploadOk = 0;
+	}*/
 
+	// Check if $uploadOk is set to 0 by an error
+	if ($uploadOk == 0) {
+    	echo "Sorry, your file was not uploaded.";
+		AutoLogger("UPLOAD","Fail to Upload ");
+	// if everything is ok, try to upload file
+	} 
 
-
-
-
+	else {
+    	if (move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $target_file)) {
+        	echo "The file ". basename( $_FILES["fileToUpload"]["name"]). " has been uploaded.";
+			AutoLogger("UPLOAD","File".$fileName."Upload ");
+    	} 
+		else {
+        	echo "Sorry, there was an error uploading your file.";
+			AutoLogger("UPLOAD","Fail to Upload ");
+    	}
+	}
 
 ?>
