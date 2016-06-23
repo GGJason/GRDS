@@ -28,10 +28,12 @@
 
 //////
 //	Set the File Upload Directory and The Filename (timestamp_OriginalName))
-//	Set the uploadOk var. to 1 (means Ok)
 	$target_dir = "./Uploads/".$interval."/";
 	$target_file = $target_dir . $time ."_". basename($_FILES["fileToUpload"]["name"]);
 	$uploadOk = 1;
+//	Set the uploadOk var. to 1 (means Ok)
+	$fileType = pathinfo($target_file,PATHINFO_EXTENSION);
+//	Get File Type
 //
 //////
 
@@ -62,32 +64,57 @@
 //////
 
 
-//////
-// 	Allow certain file formats (Not Used Now(20160622))
-//	if($imageFileType != "jpg" && $imageFileType != "png" && $imageFileType != "jpeg"&& $imageFileType != "gif" ) {
-//    	echo "Sorry, only JPG, JPEG, PNG & GIF files are allowed.";
-//   	$uploadOk = 0;
-//	}*/
-//////
-
 
 //////
 //	File Upload Stage
 // 	Check if $uploadOk is set to 0 by an error
 	if ($uploadOk == 0) {
     	echo "Sorry, your file was not uploaded.";
-		AutoLogger("UPLOAD","Fail to Upload ");
+		AutoLogger("UPLOAD","Fail to Upload ","upload.php/ ");
 // 	if everything is ok, try to upload file
 	} 
 
 	else {
+//		Issue: 無法中文檔名
+//		iconv("UTF-8", "big5", $target_file )
     	if (move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $target_file)) {
         	echo "The file ". basename( $_FILES["fileToUpload"]["name"]). " has been uploaded.";
-			AutoLogger("UPLOAD","File ".$fileName." Upload to ".$target_dir);
+			AutoLogger("UPLOAD","File ".$fileName." Upload to ".$target_dir,"upload.php/ ");
+
+//////
+// 			Check File Format and Handling. 
+			if($FileType == "jpg" || $FileType == "png" || $FileType == "jpeg" || $FileType == "gif" ) {
+//			Image: jpg, png, jpeg, gif
+			AutoLogger("FILE","File ".$fileName." is checked to be an image with ".$FileType." extention and be record in history.","upload.php/ ");
+
+			}
+
+			else if($FileType == "csv" || $FileType == "tsv"){
+//			data: csv,tsv
+			AutoLogger("FILE","File ".$fileName." is checked to be a data table with ".$FileType." extention and be record in history. Prepare for update to database.","upload.php/ ");
+
+
+			}
+
+			else if($FileType == "doc" ||$FileType == "docx" || $FileType == "xls"||$FileType == "xlsx" || $FileType == "txt")
+			{
+//			Document: doc,docx,xls,xlsx,txt
+			AutoLogger("FILE","File ".$fileName." is checked to be a document with ".$FileType." extention and be record in history.","upload.php/ ");
+
+			}
+
+			else{
+//			Else
+			AutoLogger("FILE","File ".$fileName." is checked to be a/an ".$FileType." file whose extention is not default and be record in history.","upload.php/ ");
+
+			}
+//
+//////
+
     	} 
 		else {
         	echo "Sorry, there was an error uploading your file.";
-			AutoLogger("UPLOAD","Fail to Upload ");
+			AutoLogger("UPLOAD","Fail to Upload ","upload.php/ ");
     	}
 	}
 //
