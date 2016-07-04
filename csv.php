@@ -1,5 +1,4 @@
 <?php
-	include("log.php");
 
 //////
 //	Test File Zone
@@ -43,9 +42,37 @@
 		return;
 	}
 
-	function findTable($schemaName){Weather
-	switch ($schemaName){
+	function findTable($schemaName){
 	}
-
-
+	function getDataNum($fileName,$table){
+		$file = fopen($fileName,"r");
+		$max=0;
+		while (($read = fgetcsv($file,0,",",'"',"\0")) !== FALSE) {
+////	For Checking Data
+			if($read[3]==$table&&$read[4]>=$max)$max=$read[4]+1;
+//				echo "<br>";
+		}
+		fclose($file);		
+		return $max;
+	}
+	function getDataZIndex($table,$startTime,$endTime,$type){
+		$index=1;
+		while (($read = fgetcsv($table,0,",",'"',"\0")) !== FALSE) {
+			echo $read[3]." ";
+			if($read[3]==$type){
+				if((($read[1]<=$startTime)&&($read[2]<=$startTime))||(($read[1]<=$endTime)&&($read[2]<=$endTime))){
+					if($read[5]>=$index)$index=$read[5]+1;
+				}
+			}
+		}		
+		return $index;
+	}
 ?>
+
+
+
+
+
+
+
+

@@ -13,7 +13,7 @@
 //////
 
 function AutoLogger($logType,$action,$logger){
-	if(!(is_dir("./log/")))mkdir("log",0777);
+	if(!(is_dir("./log/")))mkdir("log",0771);
 	$timestamp = "UTC+8 ".date("Ymd_h:i:s")."\t".round(microtime(true) * 1000);
 	$logFile = fopen("./log/".$logType.".log", "a+");
 	$log = $timestamp."\t : ".$logger."\t : ".$action."\n";

@@ -8,8 +8,9 @@
 
 
 //////
-//	Include the Logger Function
+//	Include the Functions
 	include ("log.php");
+	include ("xiData.php");
 //
 //////
 
@@ -20,8 +21,8 @@
 	$time = time();
 	$Date = date_create();
 	$interval=date_format($Date,"ym");
-	if(!(is_dir("./Uploads/")))mkdir("./Uploads/",0777);
-	if(!(is_dir("./Uploads/".$interval."/")))mkdir("./Uploads/".$interval."/",0777);
+	if(!(is_dir("./Uploads/")))mkdir("./Uploads/",0771);
+	if(!(is_dir("./Uploads/".$interval."/")))mkdir("./Uploads/".$interval."/",0771);
 //
 //////
 
@@ -83,16 +84,16 @@
 
 //////
 // 			Check File Format and Handling. 
-			if($FileType == "jpg" || $FileType == "png" || $FileType == "jpeg" || $FileType == "gif" ) {
+			if($FileType == "jpg" || $FileType == "png" || $FileType == "jpeg" || $FileType == "gif" ) 				{
 //			Image: jpg, png, jpeg, gif
 			AutoLogger("FILE","File ".$fileName." is checked to be an image with ".$FileType." extention and be record in history.","upload.php/ ");
 
 			}
 
-			else if($FileType == "csv" || $FileType == "tsv"){
-//			data: csv,tsv
-			AutoLogger("FILE","File ".$fileName." is checked to be a data table with ".$FileType." extention and be record in history. Prepare for update to database.","upload.php/ ");
-
+			else if($FileType == "csv" || $FileType == "tsv"||$FileType == "CSV" || $FileType == "TSV"){
+//				data: csv,tsv
+				AutoLogger("FILE","File ".$fileName." is checked to be a data table with ".$FileType." extention and be record in history. Prepare for update to database.","upload.php/ ");
+				data($target_file);
 
 			}
 
