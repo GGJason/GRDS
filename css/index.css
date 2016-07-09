@@ -1,0 +1,65 @@
+#head
+{
+	width: 100%;
+	text-align: center;
+}
+#menu
+{
+	float: left;
+	width: 30%
+}
+#main
+{
+	float: left;
+	width:70%;
+	height: 70%
+}
+#foot
+{
+	float: left;
+	width: 100%;
+	text-align: center;
+}
+#timeForm
+{
+	align-items: center;
+	text-align: center;
+}
+body {
+  	padding-top: 50px;
+  	width: 100%;
+  	min-height: 800;
+}
+.starter-template {
+  	padding: 40px 15px;
+  	text-align: center;
+}
+footer{
+	position: relative;
+	text-align: center;
+	width: 100%;
+	padding: 0;
+	bottom: 0;
+	background-color: grey;
+}
+#container{
+	min-height: 100%;
+	position: relative;
+}
+.navbar{
+	width: 100%;
+}
+input{
+	padding-top: 2pt;
+}
+#name,#passwd{
+	max-width:80pt;
+}
+#authsubmit{
+	max-width: 50pt;
+}
+.log{
+	position: absolute;
+	right: 50pt;
+	height: auto;
+}

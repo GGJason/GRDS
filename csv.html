@@ -1,0 +1,2451 @@
+<!DOCTYPE html>
+<!--For PC & Desktop Version-->
+<html>
+	<head>
+		<title>BGBIM - Green Roof Data Station</title>
+<!--		<script src="./path/to/dropzone.js"></script>-->
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="css/index.css">
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+	</head>
+	<body>
+		<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+			<div class="container">
+				<div class="navbar-header"><button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button> <a class="navbar-brand" href="https://kkbruce.tw/bs3/Examples/starter-template#">Blue Green BIM</a></div>
+				<div id="navbar" class="collapse navbar-collapse">
+					<ul class="nav navbar-nav">
+						<li class="active"><a href="https://kkbruce.tw/bs3/Examples/starter-template#">Home</a></li>
+						<li><a href="https://kkbruce.tw/bs3/Examples/starter-template#about">About</a></li>
+						<li><a href="https://kkbruce.tw/bs3/Examples/starter-template#contact">Contact</a></li>
+						
+					</ul>
+				</div>
+
+			</div>
+		</nav>
+		
+		<div class="container" id="interface">
+			<div class="starter-template">
+				<h1>File: 20160101-20160103 Measurement Part1</h1>
+				<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
+.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
+.tg .tg-yw4l{vertical-align:top}
+</style>
+<table class="tg">
+  <tr>
+    <th class="tg-031e">Time</th>
+    <th class="tg-031e">BS2 Soil Moisture(RAW) (mV)</th>
+    <th class="tg-031e">Battery(RAW) (V )</th>
+    <th class="tg-031e">Temperature(RAW) (degC )</th>
+    <th class="tg-031e">AS4 Soil Moisture(RAW) (mV )</th>
+    <th class="tg-031e">AS2 Soil Moisture(RAW) (mV )</th>
+    <th class="tg-yw4l">BS4 Soil Moisture(RAW) (mV )</th>
+    <th class="tg-yw4l">CS2 Soil Moisture(RAW) (mV )</th>
+    <th class="tg-yw4l">CS4 Soil Moisture(RAW) (mV )</th>
+    <th class="tg-yw4l">Flow A(TOT) (l )</th>
+  </tr>
+  <tr>
+    <td class="tg-031e">01/10/2014 00:00</td>
+    <td class="tg-031e">97.03</td>
+    <td class="tg-031e">9.69</td>
+    <td class="tg-031e">15.2</td>
+    <td class="tg-031e">112.065</td>
+    <td class="tg-031e">105.555</td>
+    <td class="tg-yw4l">95.79</td>
+    <td class="tg-yw4l">112.375</td>
+    <td class="tg-yw4l">142.29</td>
+    <td class="tg-yw4l">0</td>
+  </tr>
+  <tr>
+    <td class="tg-031e">30/09/2014 23:55</td>
+    <td class="tg-031e">97.185</td>
+    <td class="tg-031e">9.69</td>
+    <td class="tg-031e">15.2</td>
+    <td class="tg-031e">112.065</td>
+    <td class="tg-031e">105.865</td>
+    <td class="tg-yw4l">95.945</td>
+    <td class="tg-yw4l">112.22</td>
+    <td class="tg-yw4l">142.29</td>
+    <td class="tg-yw4l">0</td>
+  </tr>
+  <tr>
+    <td class="tg-031e">30/09/2014 23:50</td>
+    <td class="tg-031e">97.185</td>
+    <td class="tg-031e">9.69</td>
+    <td class="tg-031e">15.2</td>
+    <td class="tg-031e">111.91</td>
+    <td class="tg-031e">106.02</td>
+    <td class="tg-yw4l">96.1</td>
+    <td class="tg-yw4l">113.15</td>
+    <td class="tg-yw4l">141.825</td>
+    <td class="tg-yw4l">0</td>
+  </tr>
+  <tr>
+    <td class="tg-031e">30/09/2014 23:45</td>
+    <td class="tg-031e">97.185</td>
+    <td class="tg-031e">9.69</td>
+    <td class="tg-031e">15.3</td>
+    <td class="tg-031e">112.065</td>
+    <td class="tg-031e">105.865</td>
+    <td class="tg-yw4l">95.79</td>
+    <td class="tg-yw4l">111.91</td>
+    <td class="tg-yw4l">140.74</td>
+    <td class="tg-yw4l">0</td>
+  </tr>
+  <tr>
+    <td class="tg-031e">30/09/2014 23:40</td>
+    <td class="tg-031e">97.185</td>
+    <td class="tg-031e">9.69</td>
+    <td class="tg-031e">15.3</td>
+    <td class="tg-031e">112.065</td>
+    <td class="tg-031e">106.02</td>
+    <td class="tg-yw4l">95.79</td>
+    <td class="tg-yw4l">110.825</td>
+    <td class="tg-yw4l">141.98</td>
+    <td class="tg-yw4l">0</td>
+  </tr>
+  <tr>
+    <td class="tg-031e">30/09/2014 23:35</td>
+    <td class="tg-031e">97.03</td>
+    <td class="tg-031e">9.69</td>
+    <td class="tg-031e">15.3</td>
+    <td class="tg-031e">111.91</td>
+    <td class="tg-031e">105.71</td>
+    <td class="tg-yw4l">95.79</td>
+    <td class="tg-yw4l">113.925</td>
+    <td class="tg-yw4l">139.81</td>
+    <td class="tg-yw4l">0</td>
+  </tr>
+  <tr>
+    <td class="tg-031e">30/09/2014 23:30</td>
+    <td class="tg-031e">97.03</td>
+    <td class="tg-031e">9.69</td>
+    <td class="tg-031e">15.3</td>
+    <td class="tg-031e">112.065</td>
+    <td class="tg-031e">105.71</td>
+    <td class="tg-yw4l">96.1</td>
+    <td class="tg-yw4l">113.15</td>
+    <td class="tg-yw4l">139.81</td>
+    <td class="tg-yw4l">0</td>
+  </tr>
+  <tr>
+    <td class="tg-031e">30/09/2014 23:25</td>
+    <td class="tg-031e">97.03</td>
+    <td class="tg-031e">9.69</td>
+    <td class="tg-031e">15.5</td>
+    <td class="tg-031e">112.065</td>
+    <td class="tg-031e">105.865</td>
+    <td class="tg-yw4l">95.79</td>
+    <td class="tg-yw4l">111.29</td>
+    <td class="tg-yw4l">142.91</td>
+    <td class="tg-yw4l">0</td>
+  </tr>
+  <tr>
+    <td class="tg-031e">30/09/2014 23:20</td>
+    <td class="tg-031e">97.185</td>
+    <td class="tg-031e">9.69</td>
+    <td class="tg-031e">15.5</td>
+    <td class="tg-031e">112.22</td>
+    <td class="tg-031e">106.02</td>
+    <td class="tg-yw4l">96.1</td>
+    <td class="tg-yw4l">112.53</td>
+    <td class="tg-yw4l">140.12</td>
+    <td class="tg-yw4l">0</td>
+  </tr>
+  <tr>
+    <td class="tg-031e">30/09/2014 23:15</td>
+    <td class="tg-031e">95.945</td>
+    <td class="tg-031e">9.67</td>
+    <td class="tg-031e">15.5</td>
+    <td class="tg-031e">111.6</td>
+    <td class="tg-031e">105.09</td>
+    <td class="tg-yw4l">93.93</td>
+    <td class="tg-yw4l">110.05</td>
+    <td class="tg-yw4l">139.81</td>
+    <td class="tg-yw4l">0</td>
+  </tr>
+  <tr>
+    <td class="tg-031e">30/09/2014 23:10</td>
+    <td class="tg-031e">96.565</td>
+    <td class="tg-031e">9.63</td>
+    <td class="tg-031e">15.5</td>
+    <td class="tg-031e">111.135</td>
+    <td class="tg-031e">105.555</td>
+    <td class="tg-yw4l">95.015</td>
+    <td class="tg-yw4l">112.22</td>
+    <td class="tg-yw4l">141.36</td>
+    <td class="tg-yw4l">0</td>
+  </tr>
+  <tr>
+    <td class="tg-031e">30/09/2014 23:05</td>
+    <td class="tg-031e">97.185</td>
+    <td class="tg-031e">9.69</td>
+    <td class="tg-031e">15.6</td>
+    <td class="tg-031e">112.22</td>
+    <td class="tg-031e">105.865</td>
+    <td class="tg-yw4l">96.1</td>
+    <td class="tg-yw4l">111.445</td>
+    <td class="tg-yw4l">141.205</td>
+    <td class="tg-yw4l">0</td>
+  </tr>
+  <tr>
+    <td class="tg-031e">30/09/2014 23:00</td>
+    <td class="tg-031e">97.185</td>
+    <td class="tg-031e">9.69</td>
+    <td class="tg-031e">15.6</td>
+    <td class="tg-031e">112.375</td>
+    <td class="tg-031e">106.02</td>
+    <td class="tg-yw4l">96.1</td>
+    <td class="tg-yw4l">113.615</td>
+    <td class="tg-yw4l">139.655</td>
+    <td class="tg-yw4l">0</td>
+  </tr>
+  <tr>
+    <td class="tg-031e">30/09/2014 22:55</td>
+    <td class="tg-031e">97.34</td>
+    <td class="tg-031e">9.69</td>
+    <td class="tg-031e">15.6</td>
+    <td class="tg-031e">112.22</td>
+    <td class="tg-031e">106.175</td>
+    <td class="tg-yw4l">95.79</td>
+    <td class="tg-yw4l">113.925</td>
+    <td class="tg-yw4l">139.655</td>
+    <td class="tg-yw4l">0</td>
+  </tr>
+  <tr>
+    <td class="tg-031e">30/09/2014 22:50</td>
+    <td class="tg-031e">97.185</td>
+    <td class="tg-031e">9.69</td>
+    <td class="tg-031e">15.7</td>
+    <td class="tg-031e">112.22</td>
+    <td class="tg-031e">106.175</td>
+    <td class="tg-yw4l">95.945</td>
+    <td class="tg-yw4l">113.305</td>
+    <td class="tg-yw4l">141.67</td>
+    <td class="tg-yw4l">0</td>
+  </tr>
+  <tr>
+    <td class="tg-031e">30/09/2014 22:45</td>
+    <td class="tg-031e">97.185</td>
+    <td class="tg-031e">9.69</td>
+    <td class="tg-031e">15.7</td>
+    <td class="tg-031e">112.065</td>
+    <td class="tg-031e">106.02</td>
+    <td class="tg-yw4l">96.1</td>
+    <td class="tg-yw4l">110.98</td>
+    <td class="tg-yw4l">143.22</td>
+    <td class="tg-yw4l">0</td>
+  </tr>
+  <tr>
+    <td class="tg-031e">30/09/2014 22:40</td>
+    <td class="tg-031e">96.565</td>
+    <td class="tg-031e">9.69</td>
+    <td class="tg-031e">15.9</td>
+    <td class="tg-031e">111.91</td>
+    <td class="tg-031e">104.78</td>
+    <td class="tg-yw4l">94.705</td>
+    <td class="tg-yw4l">110.98</td>
+    <td class="tg-yw4l">142.445</td>
+    <td class="tg-yw4l">0</td>
+  </tr>
+  <tr>
+    <td class="tg-031e">30/09/2014 22:35</td>
+    <td class="tg-031e">96.565</td>
+    <td class="tg-031e">9.69</td>
+    <td class="tg-031e">15.9</td>
+    <td class="tg-031e">111.29</td>
+    <td class="tg-031e">105.555</td>
+    <td class="tg-yw4l">95.325</td>
+    <td class="tg-yw4l">113.615</td>
+    <td class="tg-yw4l">139.19</td>
+    <td class="tg-yw4l">0</td>
+  </tr>
+  <tr>
+    <td class="tg-031e">30/09/2014 22:30</td>
+    <td class="tg-031e">95.945</td>
+    <td class="tg-031e">9.67</td>
+    <td class="tg-031e">15.9</td>
+    <td class="tg-031e">111.29</td>
+    <td class="tg-031e">105.09</td>
+    <td class="tg-yw4l">95.48</td>
+    <td class="tg-yw4l">112.53</td>
+    <td class="tg-yw4l">139.19</td>
+    <td class="tg-yw4l">0</td>
+  </tr>
+  <tr>
+    <td class="tg-031e">30/09/2014 22:25</td>
+    <td class="tg-031e">97.03</td>
+    <td class="tg-031e">9.69</td>
+    <td class="tg-031e">16</td>
+    <td class="tg-031e">111.29</td>
+    <td class="tg-031e">105.245</td>
+    <td class="tg-yw4l">95.015</td>
+    <td class="tg-yw4l">110.98</td>
+    <td class="tg-yw4l">140.585</td>
+    <td class="tg-yw4l">0</td>
+  </tr>
+  <tr>
+    <td class="tg-031e">30/09/2014 22:20</td>
+    <td class="tg-031e">96.41</td>
+    <td class="tg-031e">9.69</td>
+    <td class="tg-031e">16</td>
+    <td class="tg-031e">111.6</td>
+    <td class="tg-031e">105.71</td>
+    <td class="tg-yw4l">95.79</td>
+    <td class="tg-yw4l">112.22</td>
+    <td class="tg-yw4l">140.74</td>
+    <td class="tg-yw4l">0</td>
+  </tr>
+  <tr>
+    <td class="tg-031e">30/09/2014 22:15</td>
+    <td class="tg-031e">97.03</td>
+    <td class="tg-031e">9.69</td>
+    <td class="tg-031e">16</td>
+    <td class="tg-031e">112.065</td>
+    <td class="tg-031e">105.865</td>
+    <td class="tg-yw4l">95.945</td>
+    <td class="tg-yw4l">113.46</td>
+    <td class="tg-yw4l">140.895</td>
+    <td class="tg-yw4l">0</td>
+  </tr>
+  <tr>
+    <td class="tg-031e">30/09/2014 22:10</td>
+    <td class="tg-031e">97.185</td>
+    <td class="tg-031e">9.69</td>
+    <td class="tg-031e">16</td>
+    <td class="tg-031e">112.22</td>
+    <td class="tg-031e">106.02</td>
+    <td class="tg-yw4l">96.1</td>
+    <td class="tg-yw4l">111.445</td>
+    <td class="tg-yw4l">142.91</td>
+    <td class="tg-yw4l">0</td>
+  </tr>
+  <tr>
+    <td class="tg-031e">30/09/2014 22:05</td>
+    <td class="tg-031e">97.185</td>
+    <td class="tg-031e">9.69</td>
+    <td class="tg-031e">16.1</td>
+    <td class="tg-031e">112.065</td>
+    <td class="tg-031e">105.71</td>
+    <td class="tg-yw4l">95.79</td>
+    <td class="tg-yw4l">112.84</td>
+    <td class="tg-yw4l">139.655</td>
+    <td class="tg-yw4l">0</td>
+  </tr>
+  <tr>
+    <td class="tg-031e">30/09/2014 22:00</td>
+    <td class="tg-031e">96.72</td>
+    <td class="tg-031e">9.69</td>
+    <td class="tg-031e">16.1</td>
+    <td class="tg-031e">111.135</td>
+    <td class="tg-031e">104.625</td>
+    <td class="tg-yw4l">95.48</td>
+    <td class="tg-yw4l">113.46</td>
+    <td class="tg-yw4l">138.725</td>
+    <td class="tg-yw4l">0</td>
+  </tr>
+  <tr>
+    <td class="tg-031e">30/09/2014 21:55</td>
+    <td class="tg-031e">97.03</td>
+    <td class="tg-031e">9.69</td>
+    <td class="tg-031e">16.3</td>
+    <td class="tg-031e">112.375</td>
+    <td class="tg-031e">106.02</td>
+    <td class="tg-yw4l">95.945</td>
+    <td class="tg-yw4l">111.6</td>
+    <td class="tg-yw4l">140.895</td>
+    <td class="tg-yw4l">0</td>
+  </tr>
+  <tr>
+    <td class="tg-031e">30/09/2014 21:50</td>
+    <td class="tg-031e">96.875</td>
+    <td class="tg-031e">9.69</td>
+    <td class="tg-031e">16.3</td>
+    <td class="tg-031e">112.22</td>
+    <td class="tg-031e">105.865</td>
+    <td class="tg-yw4l">95.945</td>
+    <td class="tg-yw4l">112.065</td>
+    <td class="tg-yw4l">140.43</td>
+    <td class="tg-yw4l">0</td>
+  </tr>
+  <tr>
+    <td class="tg-031e">30/09/2014 21:45</td>
+    <td class="tg-031e">97.03</td>
+    <td class="tg-031e">9.69</td>
+    <td class="tg-031e">16.4</td>
+    <td class="tg-031e">112.53</td>
+    <td class="tg-031e">106.02</td>
+    <td class="tg-yw4l">95.945</td>
+    <td class="tg-yw4l">110.67</td>
+    <td class="tg-yw4l">143.22</td>
+    <td class="tg-yw4l">0</td>
+  </tr>
+  <tr>
+    <td class="tg-031e">30/09/2014 21:40</td>
+    <td class="tg-031e">97.34</td>
+    <td class="tg-031e">9.69</td>
+    <td class="tg-031e">16.4</td>
+    <td class="tg-031e">112.22</td>
+    <td class="tg-031e">106.175</td>
+    <td class="tg-yw4l">95.79</td>
+    <td class="tg-yw4l">110.36</td>
+    <td class="tg-yw4l">142.91</td>
+    <td class="tg-yw4l">0</td>
+  </tr>
+  <tr>
+    <td class="tg-031e">30/09/2014 21:35</td>
+    <td class="tg-031e">97.34</td>
+    <td class="tg-031e">9.69</td>
+    <td class="tg-031e">16.5</td>
+    <td class="tg-031e">112.22</td>
+    <td class="tg-031e">106.175</td>
+    <td class="tg-yw4l">96.255</td>
+    <td class="tg-yw4l">113.46</td>
+    <td class="tg-yw4l">139.81</td>
+    <td class="tg-yw4l">0</td>
+  </tr>
+  <tr>
+    <td class="tg-031e">30/09/2014 21:30</td>
+    <td class="tg-031e">97.185</td>
+    <td class="tg-031e">9.69</td>
+    <td class="tg-031e">16.7</td>
+    <td class="tg-031e">112.375</td>
+    <td class="tg-031e">106.175</td>
+    <td class="tg-yw4l">96.1</td>
+    <td class="tg-yw4l">112.995</td>
+    <td class="tg-yw4l">139.965</td>
+    <td class="tg-yw4l">0</td>
+  </tr>
+  <tr>
+    <td class="tg-031e">30/09/2014 21:25</td>
+    <td class="tg-031e">97.03</td>
+    <td class="tg-031e">9.69</td>
+    <td class="tg-031e">16.7</td>
+    <td class="tg-031e">112.375</td>
+    <td class="tg-031e">106.02</td>
+    <td class="tg-yw4l">96.1</td>
+    <td class="tg-yw4l">113.77</td>
+    <td class="tg-yw4l">140.585</td>
+    <td class="tg-yw4l">0</td>
+  </tr>
+  <tr>
+    <td class="tg-031e">30/09/2014 21:20</td>
+    <td class="tg-031e">97.185</td>
+    <td class="tg-031e">9.69</td>
+    <td class="tg-031e">16.8</td>
+    <td class="tg-031e">112.375</td>
+    <td class="tg-031e">106.02</td>
+    <td class="tg-yw4l">95.945</td>
+    <td class="tg-yw4l">111.91</td>
+    <td class="tg-yw4l">142.755</td>
+    <td class="tg-yw4l">0</td>
+  </tr>
+  <tr>
+    <td class="tg-031e">30/09/2014 21:15</td>
+    <td class="tg-031e">96.875</td>
+    <td class="tg-031e">9.69</td>
+    <td class="tg-031e">16.8</td>
+    <td class="tg-031e">111.445</td>
+    <td class="tg-031e">105.4</td>
+    <td class="tg-yw4l">95.015</td>
+    <td class="tg-yw4l">111.29</td>
+    <td class="tg-yw4l">139.81</td>
+    <td class="tg-yw4l">0</td>
+  </tr>
+  <tr>
+    <td class="tg-031e">30/09/2014 21:10</td>
+    <td class="tg-031e">96.565</td>
+    <td class="tg-031e">9.67</td>
+    <td class="tg-031e">16.9</td>
+    <td class="tg-031e">111.445</td>
+    <td class="tg-031e">105.555</td>
+    <td class="tg-yw4l">95.635</td>
+    <td class="tg-yw4l">107.88</td>
+    <td class="tg-yw4l">141.825</td>
+    <td class="tg-yw4l">0</td>
+  </tr>
+  <tr>
+    <td class="tg-031e">30/09/2014 21:05</td>
+    <td class="tg-031e">96.875</td>
+    <td class="tg-031e">9.69</td>
+    <td class="tg-031e">17.1</td>
+    <td class="tg-031e">112.22</td>
+    <td class="tg-031e">105.865</td>
+    <td class="tg-yw4l">95.945</td>
+    <td class="tg-yw4l">111.135</td>
+    <td class="tg-yw4l">141.05</td>
+    <td class="tg-yw4l">0</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">30/09/2014 21:00</td>
+    <td class="tg-yw4l">97.185</td>
+    <td class="tg-yw4l">9.69</td>
+    <td class="tg-yw4l">17.2</td>
+    <td class="tg-yw4l">112.375</td>
+    <td class="tg-yw4l">106.175</td>
+    <td class="tg-yw4l">96.1</td>
+    <td class="tg-yw4l">113.925</td>
+    <td class="tg-yw4l">140.275</td>
+    <td class="tg-yw4l">0</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">30/09/2014 20:55</td>
+    <td class="tg-yw4l">97.185</td>
+    <td class="tg-yw4l">9.69</td>
+    <td class="tg-yw4l">17.2</td>
+    <td class="tg-yw4l">112.685</td>
+    <td class="tg-yw4l">106.175</td>
+    <td class="tg-yw4l">96.1</td>
+    <td class="tg-yw4l">113.925</td>
+    <td class="tg-yw4l">141.05</td>
+    <td class="tg-yw4l">0</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">30/09/2014 20:50</td>
+    <td class="tg-yw4l">96.875</td>
+    <td class="tg-yw4l">9.69</td>
+    <td class="tg-yw4l">17.3</td>
+    <td class="tg-yw4l">111.755</td>
+    <td class="tg-yw4l">105.4</td>
+    <td class="tg-yw4l">94.86</td>
+    <td class="tg-yw4l">112.375</td>
+    <td class="tg-yw4l">139.345</td>
+    <td class="tg-yw4l">0</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">30/09/2014 20:45</td>
+    <td class="tg-yw4l">97.185</td>
+    <td class="tg-yw4l">9.69</td>
+    <td class="tg-yw4l">17.5</td>
+    <td class="tg-yw4l">112.375</td>
+    <td class="tg-yw4l">106.175</td>
+    <td class="tg-yw4l">96.255</td>
+    <td class="tg-yw4l">113.305</td>
+    <td class="tg-yw4l">142.29</td>
+    <td class="tg-yw4l">0</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">30/09/2014 20:40</td>
+    <td class="tg-yw4l">97.185</td>
+    <td class="tg-yw4l">9.69</td>
+    <td class="tg-yw4l">17.5</td>
+    <td class="tg-yw4l">112.53</td>
+    <td class="tg-yw4l">106.175</td>
+    <td class="tg-yw4l">96.255</td>
+    <td class="tg-yw4l">114.235</td>
+    <td class="tg-yw4l">139.965</td>
+    <td class="tg-yw4l">0</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">30/09/2014 20:35</td>
+    <td class="tg-yw4l">97.34</td>
+    <td class="tg-yw4l">9.69</td>
+    <td class="tg-yw4l">17.6</td>
+    <td class="tg-yw4l">112.53</td>
+    <td class="tg-yw4l">106.175</td>
+    <td class="tg-yw4l">96.1</td>
+    <td class="tg-yw4l">114.39</td>
+    <td class="tg-yw4l">140.74</td>
+    <td class="tg-yw4l">0</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">30/09/2014 20:30</td>
+    <td class="tg-yw4l">97.185</td>
+    <td class="tg-yw4l">9.69</td>
+    <td class="tg-yw4l">17.7</td>
+    <td class="tg-yw4l">112.53</td>
+    <td class="tg-yw4l">106.175</td>
+    <td class="tg-yw4l">96.255</td>
+    <td class="tg-yw4l">114.39</td>
+    <td class="tg-yw4l">140.585</td>
+    <td class="tg-yw4l">0</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">30/09/2014 20:25</td>
+    <td class="tg-yw4l">96.875</td>
+    <td class="tg-yw4l">9.69</td>
+    <td class="tg-yw4l">17.9</td>
+    <td class="tg-yw4l">112.065</td>
+    <td class="tg-yw4l">105.245</td>
+    <td class="tg-yw4l">95.015</td>
+    <td class="tg-yw4l">110.36</td>
+    <td class="tg-yw4l">141.67</td>
+    <td class="tg-yw4l">0</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">30/09/2014 20:20</td>
+    <td class="tg-yw4l">94.55</td>
+    <td class="tg-yw4l">9.67</td>
+    <td class="tg-yw4l">17.9</td>
+    <td class="tg-yw4l">111.135</td>
+    <td class="tg-yw4l">105.555</td>
+    <td class="tg-yw4l">94.86</td>
+    <td class="tg-yw4l">111.135</td>
+    <td class="tg-yw4l">136.865</td>
+    <td class="tg-yw4l">0</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">30/09/2014 20:15</td>
+    <td class="tg-yw4l">97.03</td>
+    <td class="tg-yw4l">9.69</td>
+    <td class="tg-yw4l">18</td>
+    <td class="tg-yw4l">112.53</td>
+    <td class="tg-yw4l">106.33</td>
+    <td class="tg-yw4l">96.255</td>
+    <td class="tg-yw4l">110.98</td>
+    <td class="tg-yw4l">143.53</td>
+    <td class="tg-yw4l">0</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">30/09/2014 20:10</td>
+    <td class="tg-yw4l">97.185</td>
+    <td class="tg-yw4l">9.69</td>
+    <td class="tg-yw4l">18.1</td>
+    <td class="tg-yw4l">112.685</td>
+    <td class="tg-yw4l">106.175</td>
+    <td class="tg-yw4l">95.945</td>
+    <td class="tg-yw4l">111.135</td>
+    <td class="tg-yw4l">143.065</td>
+    <td class="tg-yw4l">0</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">30/09/2014 20:05</td>
+    <td class="tg-yw4l">97.03</td>
+    <td class="tg-yw4l">9.69</td>
+    <td class="tg-yw4l">18.3</td>
+    <td class="tg-yw4l">112.53</td>
+    <td class="tg-yw4l">106.33</td>
+    <td class="tg-yw4l">95.945</td>
+    <td class="tg-yw4l">112.22</td>
+    <td class="tg-yw4l">140.275</td>
+    <td class="tg-yw4l">0</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">30/09/2014 20:00</td>
+    <td class="tg-yw4l">97.34</td>
+    <td class="tg-yw4l">9.69</td>
+    <td class="tg-yw4l">18.4</td>
+    <td class="tg-yw4l">112.685</td>
+    <td class="tg-yw4l">106.485</td>
+    <td class="tg-yw4l">96.255</td>
+    <td class="tg-yw4l">114.545</td>
+    <td class="tg-yw4l">140.74</td>
+    <td class="tg-yw4l">0</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">30/09/2014 19:55</td>
+    <td class="tg-yw4l">97.185</td>
+    <td class="tg-yw4l">9.69</td>
+    <td class="tg-yw4l">18.5</td>
+    <td class="tg-yw4l">112.685</td>
+    <td class="tg-yw4l">106.485</td>
+    <td class="tg-yw4l">96.1</td>
+    <td class="tg-yw4l">112.685</td>
+    <td class="tg-yw4l">143.22</td>
+    <td class="tg-yw4l">0</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">30/09/2014 19:50</td>
+    <td class="tg-yw4l">97.185</td>
+    <td class="tg-yw4l">9.69</td>
+    <td class="tg-yw4l">18.5</td>
+    <td class="tg-yw4l">112.53</td>
+    <td class="tg-yw4l">106.33</td>
+    <td class="tg-yw4l">96.255</td>
+    <td class="tg-yw4l">111.135</td>
+    <td class="tg-yw4l">142.445</td>
+    <td class="tg-yw4l">0</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">30/09/2014 19:45</td>
+    <td class="tg-yw4l">97.34</td>
+    <td class="tg-yw4l">9.69</td>
+    <td class="tg-yw4l">18.7</td>
+    <td class="tg-yw4l">112.53</td>
+    <td class="tg-yw4l">106.485</td>
+    <td class="tg-yw4l">96.1</td>
+    <td class="tg-yw4l">113.925</td>
+    <td class="tg-yw4l">139.965</td>
+    <td class="tg-yw4l">0</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">30/09/2014 19:40</td>
+    <td class="tg-yw4l">96.875</td>
+    <td class="tg-yw4l">9.69</td>
+    <td class="tg-yw4l">18.8</td>
+    <td class="tg-yw4l">111.6</td>
+    <td class="tg-yw4l">105.555</td>
+    <td class="tg-yw4l">94.705</td>
+    <td class="tg-yw4l">113.925</td>
+    <td class="tg-yw4l">140.585</td>
+    <td class="tg-yw4l">0</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">30/09/2014 19:35</td>
+    <td class="tg-yw4l">97.34</td>
+    <td class="tg-yw4l">9.69</td>
+    <td class="tg-yw4l">18.9</td>
+    <td class="tg-yw4l">112.685</td>
+    <td class="tg-yw4l">106.485</td>
+    <td class="tg-yw4l">96.255</td>
+    <td class="tg-yw4l">112.375</td>
+    <td class="tg-yw4l">143.53</td>
+    <td class="tg-yw4l">0</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">30/09/2014 19:30</td>
+    <td class="tg-yw4l">97.34</td>
+    <td class="tg-yw4l">9.69</td>
+    <td class="tg-yw4l">19.1</td>
+    <td class="tg-yw4l">112.685</td>
+    <td class="tg-yw4l">106.33</td>
+    <td class="tg-yw4l">96.1</td>
+    <td class="tg-yw4l">112.53</td>
+    <td class="tg-yw4l">143.22</td>
+    <td class="tg-yw4l">0</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">30/09/2014 19:25</td>
+    <td class="tg-yw4l">96.875</td>
+    <td class="tg-yw4l">9.69</td>
+    <td class="tg-yw4l">19.2</td>
+    <td class="tg-yw4l">112.375</td>
+    <td class="tg-yw4l">106.33</td>
+    <td class="tg-yw4l">96.1</td>
+    <td class="tg-yw4l">111.91</td>
+    <td class="tg-yw4l">140.12</td>
+    <td class="tg-yw4l">0</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">30/09/2014 19:20</td>
+    <td class="tg-yw4l">97.185</td>
+    <td class="tg-yw4l">9.69</td>
+    <td class="tg-yw4l">19.3</td>
+    <td class="tg-yw4l">112.685</td>
+    <td class="tg-yw4l">106.485</td>
+    <td class="tg-yw4l">96.255</td>
+    <td class="tg-yw4l">113.615</td>
+    <td class="tg-yw4l">140.12</td>
+    <td class="tg-yw4l">0</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">30/09/2014 19:15</td>
+    <td class="tg-yw4l">97.34</td>
+    <td class="tg-yw4l">9.69</td>
+    <td class="tg-yw4l">19.5</td>
+    <td class="tg-yw4l">112.84</td>
+    <td class="tg-yw4l">106.64</td>
+    <td class="tg-yw4l">96.255</td>
+    <td class="tg-yw4l">111.91</td>
+    <td class="tg-yw4l">143.84</td>
+    <td class="tg-yw4l">0</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">30/09/2014 19:10</td>
+    <td class="tg-yw4l">97.185</td>
+    <td class="tg-yw4l">9.69</td>
+    <td class="tg-yw4l">19.6</td>
+    <td class="tg-yw4l">112.685</td>
+    <td class="tg-yw4l">106.33</td>
+    <td class="tg-yw4l">96.255</td>
+    <td class="tg-yw4l">112.375</td>
+    <td class="tg-yw4l">141.05</td>
+    <td class="tg-yw4l">0</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">30/09/2014 19:05</td>
+    <td class="tg-yw4l">97.03</td>
+    <td class="tg-yw4l">9.69</td>
+    <td class="tg-yw4l">19.7</td>
+    <td class="tg-yw4l">112.53</td>
+    <td class="tg-yw4l">106.02</td>
+    <td class="tg-yw4l">96.1</td>
+    <td class="tg-yw4l">113.615</td>
+    <td class="tg-yw4l">142.91</td>
+    <td class="tg-yw4l">0</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">30/09/2014 19:00</td>
+    <td class="tg-yw4l">97.03</td>
+    <td class="tg-yw4l">9.69</td>
+    <td class="tg-yw4l">19.9</td>
+    <td class="tg-yw4l">112.53</td>
+    <td class="tg-yw4l">105.865</td>
+    <td class="tg-yw4l">95.48</td>
+    <td class="tg-yw4l">114.235</td>
+    <td class="tg-yw4l">141.05</td>
+    <td class="tg-yw4l">0</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">30/09/2014 18:55</td>
+    <td class="tg-yw4l">97.34</td>
+    <td class="tg-yw4l">9.69</td>
+    <td class="tg-yw4l">20</td>
+    <td class="tg-yw4l">112.685</td>
+    <td class="tg-yw4l">106.485</td>
+    <td class="tg-yw4l">96.1</td>
+    <td class="tg-yw4l">113.925</td>
+    <td class="tg-yw4l">143.065</td>
+    <td class="tg-yw4l">0</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">30/09/2014 18:50</td>
+    <td class="tg-yw4l">97.03</td>
+    <td class="tg-yw4l">9.69</td>
+    <td class="tg-yw4l">20.1</td>
+    <td class="tg-yw4l">112.53</td>
+    <td class="tg-yw4l">106.175</td>
+    <td class="tg-yw4l">95.945</td>
+    <td class="tg-yw4l">114.7</td>
+    <td class="tg-yw4l">140.275</td>
+    <td class="tg-yw4l">0</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">30/09/2014 18:45</td>
+    <td class="tg-yw4l">97.34</td>
+    <td class="tg-yw4l">9.69</td>
+    <td class="tg-yw4l">20.4</td>
+    <td class="tg-yw4l">112.84</td>
+    <td class="tg-yw4l">106.485</td>
+    <td class="tg-yw4l">96.41</td>
+    <td class="tg-yw4l">112.53</td>
+    <td class="tg-yw4l">143.53</td>
+    <td class="tg-yw4l">0</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">30/09/2014 18:40</td>
+    <td class="tg-yw4l">96.565</td>
+    <td class="tg-yw4l">9.69</td>
+    <td class="tg-yw4l">20.4</td>
+    <td class="tg-yw4l">112.065</td>
+    <td class="tg-yw4l">106.02</td>
+    <td class="tg-yw4l">95.79</td>
+    <td class="tg-yw4l">110.98</td>
+    <td class="tg-yw4l">141.67</td>
+    <td class="tg-yw4l">0</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">30/09/2014 18:35</td>
+    <td class="tg-yw4l">97.185</td>
+    <td class="tg-yw4l">9.69</td>
+    <td class="tg-yw4l">20.7</td>
+    <td class="tg-yw4l">112.685</td>
+    <td class="tg-yw4l">106.33</td>
+    <td class="tg-yw4l">96.1</td>
+    <td class="tg-yw4l">113.46</td>
+    <td class="tg-yw4l">143.22</td>
+    <td class="tg-yw4l">0</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">30/09/2014 18:30</td>
+    <td class="tg-yw4l">97.185</td>
+    <td class="tg-yw4l">9.69</td>
+    <td class="tg-yw4l">20.8</td>
+    <td class="tg-yw4l">112.53</td>
+    <td class="tg-yw4l">106.33</td>
+    <td class="tg-yw4l">96.1</td>
+    <td class="tg-yw4l">113.305</td>
+    <td class="tg-yw4l">140.12</td>
+    <td class="tg-yw4l">0</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">30/09/2014 18:25</td>
+    <td class="tg-yw4l">97.34</td>
+    <td class="tg-yw4l">9.69</td>
+    <td class="tg-yw4l">20.9</td>
+    <td class="tg-yw4l">112.84</td>
+    <td class="tg-yw4l">106.485</td>
+    <td class="tg-yw4l">96.255</td>
+    <td class="tg-yw4l">114.855</td>
+    <td class="tg-yw4l">140.275</td>
+    <td class="tg-yw4l">0</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">30/09/2014 18:20</td>
+    <td class="tg-yw4l">97.185</td>
+    <td class="tg-yw4l">9.69</td>
+    <td class="tg-yw4l">21.1</td>
+    <td class="tg-yw4l">112.84</td>
+    <td class="tg-yw4l">106.33</td>
+    <td class="tg-yw4l">96.1</td>
+    <td class="tg-yw4l">113.15</td>
+    <td class="tg-yw4l">140.12</td>
+    <td class="tg-yw4l">0</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">30/09/2014 18:15</td>
+    <td class="tg-yw4l">97.495</td>
+    <td class="tg-yw4l">9.71</td>
+    <td class="tg-yw4l">21.3</td>
+    <td class="tg-yw4l">112.995</td>
+    <td class="tg-yw4l">106.64</td>
+    <td class="tg-yw4l">96.41</td>
+    <td class="tg-yw4l">113.925</td>
+    <td class="tg-yw4l">143.375</td>
+    <td class="tg-yw4l">0</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">30/09/2014 18:10</td>
+    <td class="tg-yw4l">97.34</td>
+    <td class="tg-yw4l">9.71</td>
+    <td class="tg-yw4l">21.5</td>
+    <td class="tg-yw4l">112.84</td>
+    <td class="tg-yw4l">106.485</td>
+    <td class="tg-yw4l">96.255</td>
+    <td class="tg-yw4l">113.77</td>
+    <td class="tg-yw4l">143.375</td>
+    <td class="tg-yw4l">0</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">30/09/2014 18:05</td>
+    <td class="tg-yw4l">97.03</td>
+    <td class="tg-yw4l">9.71</td>
+    <td class="tg-yw4l">21.6</td>
+    <td class="tg-yw4l">112.685</td>
+    <td class="tg-yw4l">106.33</td>
+    <td class="tg-yw4l">96.41</td>
+    <td class="tg-yw4l">112.53</td>
+    <td class="tg-yw4l">143.84</td>
+    <td class="tg-yw4l">0</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">30/09/2014 18:00</td>
+    <td class="tg-yw4l">97.03</td>
+    <td class="tg-yw4l">9.71</td>
+    <td class="tg-yw4l">21.9</td>
+    <td class="tg-yw4l">112.685</td>
+    <td class="tg-yw4l">106.175</td>
+    <td class="tg-yw4l">96.1</td>
+    <td class="tg-yw4l">111.445</td>
+    <td class="tg-yw4l">143.22</td>
+    <td class="tg-yw4l">0</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">30/09/2014 17:55</td>
+    <td class="tg-yw4l">97.185</td>
+    <td class="tg-yw4l">9.69</td>
+    <td class="tg-yw4l">22</td>
+    <td class="tg-yw4l">112.84</td>
+    <td class="tg-yw4l">106.64</td>
+    <td class="tg-yw4l">96.255</td>
+    <td class="tg-yw4l">114.235</td>
+    <td class="tg-yw4l">143.065</td>
+    <td class="tg-yw4l">0</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">30/09/2014 17:50</td>
+    <td class="tg-yw4l">97.185</td>
+    <td class="tg-yw4l">9.69</td>
+    <td class="tg-yw4l">22.1</td>
+    <td class="tg-yw4l">112.84</td>
+    <td class="tg-yw4l">106.64</td>
+    <td class="tg-yw4l">96.1</td>
+    <td class="tg-yw4l">115.165</td>
+    <td class="tg-yw4l">141.05</td>
+    <td class="tg-yw4l">0</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">30/09/2014 17:45</td>
+    <td class="tg-yw4l">97.185</td>
+    <td class="tg-yw4l">9.69</td>
+    <td class="tg-yw4l">22.4</td>
+    <td class="tg-yw4l">112.84</td>
+    <td class="tg-yw4l">106.485</td>
+    <td class="tg-yw4l">96.1</td>
+    <td class="tg-yw4l">111.6</td>
+    <td class="tg-yw4l">143.065</td>
+    <td class="tg-yw4l">0</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">30/09/2014 17:40</td>
+    <td class="tg-yw4l">97.185</td>
+    <td class="tg-yw4l">9.71</td>
+    <td class="tg-yw4l">22.5</td>
+    <td class="tg-yw4l">112.84</td>
+    <td class="tg-yw4l">106.64</td>
+    <td class="tg-yw4l">96.41</td>
+    <td class="tg-yw4l">114.235</td>
+    <td class="tg-yw4l">140.43</td>
+    <td class="tg-yw4l">0</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">30/09/2014 17:35</td>
+    <td class="tg-yw4l">97.185</td>
+    <td class="tg-yw4l">9.71</td>
+    <td class="tg-yw4l">22.8</td>
+    <td class="tg-yw4l">112.995</td>
+    <td class="tg-yw4l">106.485</td>
+    <td class="tg-yw4l">96.255</td>
+    <td class="tg-yw4l">112.995</td>
+    <td class="tg-yw4l">143.84</td>
+    <td class="tg-yw4l">0</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">30/09/2014 17:30</td>
+    <td class="tg-yw4l">96.72</td>
+    <td class="tg-yw4l">9.69</td>
+    <td class="tg-yw4l">22.9</td>
+    <td class="tg-yw4l">112.375</td>
+    <td class="tg-yw4l">105.4</td>
+    <td class="tg-yw4l">95.17</td>
+    <td class="tg-yw4l">112.53</td>
+    <td class="tg-yw4l">143.375</td>
+    <td class="tg-yw4l">0</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">30/09/2014 17:25</td>
+    <td class="tg-yw4l">97.03</td>
+    <td class="tg-yw4l">9.69</td>
+    <td class="tg-yw4l">23.1</td>
+    <td class="tg-yw4l">112.22</td>
+    <td class="tg-yw4l">105.865</td>
+    <td class="tg-yw4l">95.17</td>
+    <td class="tg-yw4l">112.065</td>
+    <td class="tg-yw4l">143.22</td>
+    <td class="tg-yw4l">0</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">30/09/2014 17:20</td>
+    <td class="tg-yw4l">97.34</td>
+    <td class="tg-yw4l">9.69</td>
+    <td class="tg-yw4l">23.2</td>
+    <td class="tg-yw4l">113.15</td>
+    <td class="tg-yw4l">106.795</td>
+    <td class="tg-yw4l">96.41</td>
+    <td class="tg-yw4l">112.84</td>
+    <td class="tg-yw4l">143.995</td>
+    <td class="tg-yw4l">0</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">30/09/2014 17:15</td>
+    <td class="tg-yw4l">97.34</td>
+    <td class="tg-yw4l">9.71</td>
+    <td class="tg-yw4l">23.5</td>
+    <td class="tg-yw4l">112.995</td>
+    <td class="tg-yw4l">106.64</td>
+    <td class="tg-yw4l">96.41</td>
+    <td class="tg-yw4l">113.615</td>
+    <td class="tg-yw4l">143.84</td>
+    <td class="tg-yw4l">0</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">30/09/2014 17:10</td>
+    <td class="tg-yw4l">97.34</td>
+    <td class="tg-yw4l">9.69</td>
+    <td class="tg-yw4l">23.5</td>
+    <td class="tg-yw4l">113.15</td>
+    <td class="tg-yw4l">106.485</td>
+    <td class="tg-yw4l">96.255</td>
+    <td class="tg-yw4l">114.7</td>
+    <td class="tg-yw4l">142.755</td>
+    <td class="tg-yw4l">0</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">30/09/2014 17:05</td>
+    <td class="tg-yw4l">96.565</td>
+    <td class="tg-yw4l">9.69</td>
+    <td class="tg-yw4l">23.6</td>
+    <td class="tg-yw4l">112.22</td>
+    <td class="tg-yw4l">106.485</td>
+    <td class="tg-yw4l">96.1</td>
+    <td class="tg-yw4l">111.6</td>
+    <td class="tg-yw4l">140.12</td>
+    <td class="tg-yw4l">0</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">30/09/2014 17:00</td>
+    <td class="tg-yw4l">96.72</td>
+    <td class="tg-yw4l">9.69</td>
+    <td class="tg-yw4l">23.7</td>
+    <td class="tg-yw4l">112.995</td>
+    <td class="tg-yw4l">106.485</td>
+    <td class="tg-yw4l">96.1</td>
+    <td class="tg-yw4l">114.08</td>
+    <td class="tg-yw4l">141.05</td>
+    <td class="tg-yw4l">0</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">30/09/2014 16:55</td>
+    <td class="tg-yw4l">97.03</td>
+    <td class="tg-yw4l">9.69</td>
+    <td class="tg-yw4l">23.9</td>
+    <td class="tg-yw4l">112.84</td>
+    <td class="tg-yw4l">105.865</td>
+    <td class="tg-yw4l">95.325</td>
+    <td class="tg-yw4l">111.135</td>
+    <td class="tg-yw4l">143.53</td>
+    <td class="tg-yw4l">0</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">30/09/2014 16:50</td>
+    <td class="tg-yw4l">97.185</td>
+    <td class="tg-yw4l">9.65</td>
+    <td class="tg-yw4l">24</td>
+    <td class="tg-yw4l">112.375</td>
+    <td class="tg-yw4l">106.485</td>
+    <td class="tg-yw4l">95.79</td>
+    <td class="tg-yw4l">109.43</td>
+    <td class="tg-yw4l">139.655</td>
+    <td class="tg-yw4l">0</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">30/09/2014 16:45</td>
+    <td class="tg-yw4l">97.34</td>
+    <td class="tg-yw4l">9.69</td>
+    <td class="tg-yw4l">24.1</td>
+    <td class="tg-yw4l">113.305</td>
+    <td class="tg-yw4l">107.105</td>
+    <td class="tg-yw4l">96.72</td>
+    <td class="tg-yw4l">112.22</td>
+    <td class="tg-yw4l">143.84</td>
+    <td class="tg-yw4l">0</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">30/09/2014 16:40</td>
+    <td class="tg-yw4l">97.495</td>
+    <td class="tg-yw4l">9.69</td>
+    <td class="tg-yw4l">24.3</td>
+    <td class="tg-yw4l">113.46</td>
+    <td class="tg-yw4l">106.95</td>
+    <td class="tg-yw4l">96.565</td>
+    <td class="tg-yw4l">113.925</td>
+    <td class="tg-yw4l">140.74</td>
+    <td class="tg-yw4l">0</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">30/09/2014 16:35</td>
+    <td class="tg-yw4l">97.03</td>
+    <td class="tg-yw4l">9.71</td>
+    <td class="tg-yw4l">24.4</td>
+    <td class="tg-yw4l">113.15</td>
+    <td class="tg-yw4l">106.64</td>
+    <td class="tg-yw4l">96.41</td>
+    <td class="tg-yw4l">112.84</td>
+    <td class="tg-yw4l">143.995</td>
+    <td class="tg-yw4l">0</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">30/09/2014 16:30</td>
+    <td class="tg-yw4l">97.34</td>
+    <td class="tg-yw4l">9.71</td>
+    <td class="tg-yw4l">24.5</td>
+    <td class="tg-yw4l">113.305</td>
+    <td class="tg-yw4l">106.795</td>
+    <td class="tg-yw4l">96.72</td>
+    <td class="tg-yw4l">115.165</td>
+    <td class="tg-yw4l">141.67</td>
+    <td class="tg-yw4l">0</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">30/09/2014 16:25</td>
+    <td class="tg-yw4l">96.72</td>
+    <td class="tg-yw4l">9.69</td>
+    <td class="tg-yw4l">24.7</td>
+    <td class="tg-yw4l">113.15</td>
+    <td class="tg-yw4l">105.865</td>
+    <td class="tg-yw4l">95.79</td>
+    <td class="tg-yw4l">110.98</td>
+    <td class="tg-yw4l">143.375</td>
+    <td class="tg-yw4l">0</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">30/09/2014 16:20</td>
+    <td class="tg-yw4l">97.34</td>
+    <td class="tg-yw4l">9.71</td>
+    <td class="tg-yw4l">24.9</td>
+    <td class="tg-yw4l">113.305</td>
+    <td class="tg-yw4l">106.95</td>
+    <td class="tg-yw4l">96.255</td>
+    <td class="tg-yw4l">111.91</td>
+    <td class="tg-yw4l">142.91</td>
+    <td class="tg-yw4l">0</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">30/09/2014 16:15</td>
+    <td class="tg-yw4l">97.495</td>
+    <td class="tg-yw4l">9.71</td>
+    <td class="tg-yw4l">25.2</td>
+    <td class="tg-yw4l">113.46</td>
+    <td class="tg-yw4l">106.95</td>
+    <td class="tg-yw4l">96.72</td>
+    <td class="tg-yw4l">112.995</td>
+    <td class="tg-yw4l">144.305</td>
+    <td class="tg-yw4l">0</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">30/09/2014 16:10</td>
+    <td class="tg-yw4l">97.34</td>
+    <td class="tg-yw4l">9.71</td>
+    <td class="tg-yw4l">25.3</td>
+    <td class="tg-yw4l">113.46</td>
+    <td class="tg-yw4l">106.95</td>
+    <td class="tg-yw4l">96.565</td>
+    <td class="tg-yw4l">115.32</td>
+    <td class="tg-yw4l">141.67</td>
+    <td class="tg-yw4l">0</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">30/09/2014 16:05</td>
+    <td class="tg-yw4l">97.185</td>
+    <td class="tg-yw4l">9.71</td>
+    <td class="tg-yw4l">25.6</td>
+    <td class="tg-yw4l">113.305</td>
+    <td class="tg-yw4l">106.795</td>
+    <td class="tg-yw4l">96.41</td>
+    <td class="tg-yw4l">115.475</td>
+    <td class="tg-yw4l">142.29</td>
+    <td class="tg-yw4l">0</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">30/09/2014 16:00</td>
+    <td class="tg-yw4l">97.03</td>
+    <td class="tg-yw4l">9.71</td>
+    <td class="tg-yw4l">25.9</td>
+    <td class="tg-yw4l">113.305</td>
+    <td class="tg-yw4l">106.795</td>
+    <td class="tg-yw4l">96.41</td>
+    <td class="tg-yw4l">115.785</td>
+    <td class="tg-yw4l">142.445</td>
+    <td class="tg-yw4l">0</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">30/09/2014 15:55</td>
+    <td class="tg-yw4l">97.495</td>
+    <td class="tg-yw4l">9.71</td>
+    <td class="tg-yw4l">26</td>
+    <td class="tg-yw4l">113.46</td>
+    <td class="tg-yw4l">107.105</td>
+    <td class="tg-yw4l">96.72</td>
+    <td class="tg-yw4l">115.475</td>
+    <td class="tg-yw4l">141.825</td>
+    <td class="tg-yw4l">0</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">30/09/2014 15:50</td>
+    <td class="tg-yw4l">97.65</td>
+    <td class="tg-yw4l">9.71</td>
+    <td class="tg-yw4l">26.3</td>
+    <td class="tg-yw4l">113.615</td>
+    <td class="tg-yw4l">107.415</td>
+    <td class="tg-yw4l">96.875</td>
+    <td class="tg-yw4l">114.235</td>
+    <td class="tg-yw4l">141.05</td>
+    <td class="tg-yw4l">0</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">30/09/2014 15:45</td>
+    <td class="tg-yw4l">97.34</td>
+    <td class="tg-yw4l">9.69</td>
+    <td class="tg-yw4l">26.4</td>
+    <td class="tg-yw4l">112.685</td>
+    <td class="tg-yw4l">106.64</td>
+    <td class="tg-yw4l">95.79</td>
+    <td class="tg-yw4l">114.545</td>
+    <td class="tg-yw4l">143.065</td>
+    <td class="tg-yw4l">0</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">30/09/2014 15:40</td>
+    <td class="tg-yw4l">96.565</td>
+    <td class="tg-yw4l">9.67</td>
+    <td class="tg-yw4l">26.7</td>
+    <td class="tg-yw4l">113.305</td>
+    <td class="tg-yw4l">106.485</td>
+    <td class="tg-yw4l">96.255</td>
+    <td class="tg-yw4l">112.685</td>
+    <td class="tg-yw4l">140.43</td>
+    <td class="tg-yw4l">0</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">30/09/2014 15:35</td>
+    <td class="tg-yw4l">97.34</td>
+    <td class="tg-yw4l">9.69</td>
+    <td class="tg-yw4l">26.9</td>
+    <td class="tg-yw4l">113.46</td>
+    <td class="tg-yw4l">106.95</td>
+    <td class="tg-yw4l">96.565</td>
+    <td class="tg-yw4l">114.235</td>
+    <td class="tg-yw4l">140.895</td>
+    <td class="tg-yw4l">0</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">30/09/2014 15:30</td>
+    <td class="tg-yw4l">96.875</td>
+    <td class="tg-yw4l">9.71</td>
+    <td class="tg-yw4l">27.2</td>
+    <td class="tg-yw4l">113.305</td>
+    <td class="tg-yw4l">107.26</td>
+    <td class="tg-yw4l">96.72</td>
+    <td class="tg-yw4l">113.15</td>
+    <td class="tg-yw4l">141.515</td>
+    <td class="tg-yw4l">0</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">30/09/2014 15:25</td>
+    <td class="tg-yw4l">97.805</td>
+    <td class="tg-yw4l">9.71</td>
+    <td class="tg-yw4l">27.5</td>
+    <td class="tg-yw4l">113.925</td>
+    <td class="tg-yw4l">107.57</td>
+    <td class="tg-yw4l">96.875</td>
+    <td class="tg-yw4l">115.01</td>
+    <td class="tg-yw4l">144.615</td>
+    <td class="tg-yw4l">0</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">30/09/2014 15:20</td>
+    <td class="tg-yw4l">97.495</td>
+    <td class="tg-yw4l">9.71</td>
+    <td class="tg-yw4l">27.7</td>
+    <td class="tg-yw4l">113.77</td>
+    <td class="tg-yw4l">107.57</td>
+    <td class="tg-yw4l">96.72</td>
+    <td class="tg-yw4l">113.925</td>
+    <td class="tg-yw4l">141.05</td>
+    <td class="tg-yw4l">0</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">30/09/2014 15:15</td>
+    <td class="tg-yw4l">97.495</td>
+    <td class="tg-yw4l">9.71</td>
+    <td class="tg-yw4l">28</td>
+    <td class="tg-yw4l">113.46</td>
+    <td class="tg-yw4l">106.175</td>
+    <td class="tg-yw4l">96.875</td>
+    <td class="tg-yw4l">115.63</td>
+    <td class="tg-yw4l">142.135</td>
+    <td class="tg-yw4l">0</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">30/09/2014 15:10</td>
+    <td class="tg-yw4l">97.65</td>
+    <td class="tg-yw4l">9.71</td>
+    <td class="tg-yw4l">28.4</td>
+    <td class="tg-yw4l">114.08</td>
+    <td class="tg-yw4l">107.415</td>
+    <td class="tg-yw4l">96.875</td>
+    <td class="tg-yw4l">112.685</td>
+    <td class="tg-yw4l">143.065</td>
+    <td class="tg-yw4l">0</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">30/09/2014 15:05</td>
+    <td class="tg-yw4l">97.34</td>
+    <td class="tg-yw4l">9.71</td>
+    <td class="tg-yw4l">28.8</td>
+    <td class="tg-yw4l">113.15</td>
+    <td class="tg-yw4l">106.64</td>
+    <td class="tg-yw4l">95.635</td>
+    <td class="tg-yw4l">113.77</td>
+    <td class="tg-yw4l">140.585</td>
+    <td class="tg-yw4l">0</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">30/09/2014 15:00</td>
+    <td class="tg-yw4l">97.03</td>
+    <td class="tg-yw4l">9.67</td>
+    <td class="tg-yw4l">29.3</td>
+    <td class="tg-yw4l">113.15</td>
+    <td class="tg-yw4l">107.105</td>
+    <td class="tg-yw4l">96.72</td>
+    <td class="tg-yw4l">111.755</td>
+    <td class="tg-yw4l">141.205</td>
+    <td class="tg-yw4l">0</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">30/09/2014 14:55</td>
+    <td class="tg-yw4l">96.72</td>
+    <td class="tg-yw4l">9.69</td>
+    <td class="tg-yw4l">29.9</td>
+    <td class="tg-yw4l">113.77</td>
+    <td class="tg-yw4l">106.95</td>
+    <td class="tg-yw4l">96.41</td>
+    <td class="tg-yw4l">111.6</td>
+    <td class="tg-yw4l">141.36</td>
+    <td class="tg-yw4l">0</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">30/09/2014 14:50</td>
+    <td class="tg-yw4l">97.805</td>
+    <td class="tg-yw4l">9.71</td>
+    <td class="tg-yw4l">30.4</td>
+    <td class="tg-yw4l">114.235</td>
+    <td class="tg-yw4l">107.725</td>
+    <td class="tg-yw4l">96.875</td>
+    <td class="tg-yw4l">114.235</td>
+    <td class="tg-yw4l">145.08</td>
+    <td class="tg-yw4l">0</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">30/09/2014 14:45</td>
+    <td class="tg-yw4l">98.115</td>
+    <td class="tg-yw4l">9.71</td>
+    <td class="tg-yw4l">30.9</td>
+    <td class="tg-yw4l">114.39</td>
+    <td class="tg-yw4l">107.88</td>
+    <td class="tg-yw4l">97.34</td>
+    <td class="tg-yw4l">113.615</td>
+    <td class="tg-yw4l">142.135</td>
+    <td class="tg-yw4l">0</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">30/09/2014 14:40</td>
+    <td class="tg-yw4l">97.495</td>
+    <td class="tg-yw4l">9.71</td>
+    <td class="tg-yw4l">31.5</td>
+    <td class="tg-yw4l">114.08</td>
+    <td class="tg-yw4l">106.795</td>
+    <td class="tg-yw4l">96.875</td>
+    <td class="tg-yw4l">112.995</td>
+    <td class="tg-yw4l">145.235</td>
+    <td class="tg-yw4l">0</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">30/09/2014 14:35</td>
+    <td class="tg-yw4l">98.115</td>
+    <td class="tg-yw4l">9.71</td>
+    <td class="tg-yw4l">31.9</td>
+    <td class="tg-yw4l">114.545</td>
+    <td class="tg-yw4l">108.035</td>
+    <td class="tg-yw4l">97.34</td>
+    <td class="tg-yw4l">116.095</td>
+    <td class="tg-yw4l">142.6</td>
+    <td class="tg-yw4l">0</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">30/09/2014 14:30</td>
+    <td class="tg-yw4l">98.115</td>
+    <td class="tg-yw4l">9.71</td>
+    <td class="tg-yw4l">32.1</td>
+    <td class="tg-yw4l">114.545</td>
+    <td class="tg-yw4l">108.19</td>
+    <td class="tg-yw4l">97.495</td>
+    <td class="tg-yw4l">115.01</td>
+    <td class="tg-yw4l">145.545</td>
+    <td class="tg-yw4l">0</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">30/09/2014 14:25</td>
+    <td class="tg-yw4l">98.27</td>
+    <td class="tg-yw4l">9.73</td>
+    <td class="tg-yw4l">32.3</td>
+    <td class="tg-yw4l">114.7</td>
+    <td class="tg-yw4l">108.345</td>
+    <td class="tg-yw4l">97.65</td>
+    <td class="tg-yw4l">112.995</td>
+    <td class="tg-yw4l">144.46</td>
+    <td class="tg-yw4l">0</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">30/09/2014 14:20</td>
+    <td class="tg-yw4l">98.27</td>
+    <td class="tg-yw4l">9.71</td>
+    <td class="tg-yw4l">32.3</td>
+    <td class="tg-yw4l">114.7</td>
+    <td class="tg-yw4l">108.345</td>
+    <td class="tg-yw4l">97.495</td>
+    <td class="tg-yw4l">114.39</td>
+    <td class="tg-yw4l">145.7</td>
+    <td class="tg-yw4l">0</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">30/09/2014 14:15</td>
+    <td class="tg-yw4l">96.255</td>
+    <td class="tg-yw4l">9.69</td>
+    <td class="tg-yw4l">32.3</td>
+    <td class="tg-yw4l">113.925</td>
+    <td class="tg-yw4l">107.88</td>
+    <td class="tg-yw4l">96.72</td>
+    <td class="tg-yw4l">114.235</td>
+    <td class="tg-yw4l">140.275</td>
+    <td class="tg-yw4l">0</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">30/09/2014 14:10</td>
+    <td class="tg-yw4l">98.58</td>
+    <td class="tg-yw4l">9.73</td>
+    <td class="tg-yw4l">32.3</td>
+    <td class="tg-yw4l">115.165</td>
+    <td class="tg-yw4l">108.345</td>
+    <td class="tg-yw4l">97.805</td>
+    <td class="tg-yw4l">115.475</td>
+    <td class="tg-yw4l">146.01</td>
+    <td class="tg-yw4l">0</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">30/09/2014 14:05</td>
+    <td class="tg-yw4l">98.115</td>
+    <td class="tg-yw4l">9.71</td>
+    <td class="tg-yw4l">32.3</td>
+    <td class="tg-yw4l">114.39</td>
+    <td class="tg-yw4l">107.415</td>
+    <td class="tg-yw4l">96.565</td>
+    <td class="tg-yw4l">112.375</td>
+    <td class="tg-yw4l">142.6</td>
+    <td class="tg-yw4l">0</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">30/09/2014 14:00</td>
+    <td class="tg-yw4l">98.27</td>
+    <td class="tg-yw4l">9.71</td>
+    <td class="tg-yw4l">32.1</td>
+    <td class="tg-yw4l">115.32</td>
+    <td class="tg-yw4l">108.345</td>
+    <td class="tg-yw4l">97.805</td>
+    <td class="tg-yw4l">116.56</td>
+    <td class="tg-yw4l">144.46</td>
+    <td class="tg-yw4l">0</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">30/09/2014 13:55</td>
+    <td class="tg-yw4l">98.425</td>
+    <td class="tg-yw4l">9.71</td>
+    <td class="tg-yw4l">32</td>
+    <td class="tg-yw4l">115.32</td>
+    <td class="tg-yw4l">108.5</td>
+    <td class="tg-yw4l">97.65</td>
+    <td class="tg-yw4l">113.305</td>
+    <td class="tg-yw4l">142.91</td>
+    <td class="tg-yw4l">0</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">30/09/2014 13:50</td>
+    <td class="tg-yw4l">97.96</td>
+    <td class="tg-yw4l">9.71</td>
+    <td class="tg-yw4l">31.9</td>
+    <td class="tg-yw4l">115.32</td>
+    <td class="tg-yw4l">108.5</td>
+    <td class="tg-yw4l">97.65</td>
+    <td class="tg-yw4l">112.685</td>
+    <td class="tg-yw4l">143.22</td>
+    <td class="tg-yw4l">0</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">30/09/2014 13:45</td>
+    <td class="tg-yw4l">98.58</td>
+    <td class="tg-yw4l">9.71</td>
+    <td class="tg-yw4l">31.7</td>
+    <td class="tg-yw4l">115.785</td>
+    <td class="tg-yw4l">108.655</td>
+    <td class="tg-yw4l">97.96</td>
+    <td class="tg-yw4l">112.995</td>
+    <td class="tg-yw4l">143.375</td>
+    <td class="tg-yw4l">0</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">30/09/2014 13:40</td>
+    <td class="tg-yw4l">98.425</td>
+    <td class="tg-yw4l">9.71</td>
+    <td class="tg-yw4l">31.6</td>
+    <td class="tg-yw4l">115.475</td>
+    <td class="tg-yw4l">108.655</td>
+    <td class="tg-yw4l">97.96</td>
+    <td class="tg-yw4l">116.095</td>
+    <td class="tg-yw4l">143.685</td>
+    <td class="tg-yw4l">0</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">30/09/2014 13:35</td>
+    <td class="tg-yw4l">98.58</td>
+    <td class="tg-yw4l">9.71</td>
+    <td class="tg-yw4l">31.5</td>
+    <td class="tg-yw4l">115.63</td>
+    <td class="tg-yw4l">108.655</td>
+    <td class="tg-yw4l">97.96</td>
+    <td class="tg-yw4l">116.405</td>
+    <td class="tg-yw4l">144.46</td>
+    <td class="tg-yw4l">0</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">30/09/2014 13:30</td>
+    <td class="tg-yw4l">98.735</td>
+    <td class="tg-yw4l">9.73</td>
+    <td class="tg-yw4l">31.2</td>
+    <td class="tg-yw4l">115.475</td>
+    <td class="tg-yw4l">108.965</td>
+    <td class="tg-yw4l">97.96</td>
+    <td class="tg-yw4l">116.405</td>
+    <td class="tg-yw4l">145.39</td>
+    <td class="tg-yw4l">0</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">30/09/2014 13:25</td>
+    <td class="tg-yw4l">98.735</td>
+    <td class="tg-yw4l">9.71</td>
+    <td class="tg-yw4l">30.9</td>
+    <td class="tg-yw4l">115.785</td>
+    <td class="tg-yw4l">109.12</td>
+    <td class="tg-yw4l">97.96</td>
+    <td class="tg-yw4l">113.46</td>
+    <td class="tg-yw4l">145.235</td>
+    <td class="tg-yw4l">0</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">30/09/2014 13:20</td>
+    <td class="tg-yw4l">98.425</td>
+    <td class="tg-yw4l">9.71</td>
+    <td class="tg-yw4l">30.7</td>
+    <td class="tg-yw4l">115.63</td>
+    <td class="tg-yw4l">108.965</td>
+    <td class="tg-yw4l">97.96</td>
+    <td class="tg-yw4l">116.405</td>
+    <td class="tg-yw4l">144.77</td>
+    <td class="tg-yw4l">0</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">30/09/2014 13:15</td>
+    <td class="tg-yw4l">98.735</td>
+    <td class="tg-yw4l">9.71</td>
+    <td class="tg-yw4l">30.3</td>
+    <td class="tg-yw4l">115.785</td>
+    <td class="tg-yw4l">109.12</td>
+    <td class="tg-yw4l">98.27</td>
+    <td class="tg-yw4l">115.01</td>
+    <td class="tg-yw4l">142.755</td>
+    <td class="tg-yw4l">0</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">30/09/2014 13:10</td>
+    <td class="tg-yw4l">97.96</td>
+    <td class="tg-yw4l">9.71</td>
+    <td class="tg-yw4l">29.9</td>
+    <td class="tg-yw4l">114.855</td>
+    <td class="tg-yw4l">107.88</td>
+    <td class="tg-yw4l">96.72</td>
+    <td class="tg-yw4l">115.475</td>
+    <td class="tg-yw4l">145.7</td>
+    <td class="tg-yw4l">0</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">30/09/2014 13:05</td>
+    <td class="tg-yw4l">98.425</td>
+    <td class="tg-yw4l">9.71</td>
+    <td class="tg-yw4l">29.5</td>
+    <td class="tg-yw4l">115.785</td>
+    <td class="tg-yw4l">108.965</td>
+    <td class="tg-yw4l">97.96</td>
+    <td class="tg-yw4l">116.095</td>
+    <td class="tg-yw4l">142.755</td>
+    <td class="tg-yw4l">0</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">30/09/2014 13:00</td>
+    <td class="tg-yw4l">98.425</td>
+    <td class="tg-yw4l">9.71</td>
+    <td class="tg-yw4l">29.1</td>
+    <td class="tg-yw4l">115.94</td>
+    <td class="tg-yw4l">109.12</td>
+    <td class="tg-yw4l">97.805</td>
+    <td class="tg-yw4l">114.7</td>
+    <td class="tg-yw4l">145.235</td>
+    <td class="tg-yw4l">0</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">30/09/2014 12:55</td>
+    <td class="tg-yw4l">98.27</td>
+    <td class="tg-yw4l">9.71</td>
+    <td class="tg-yw4l">28.7</td>
+    <td class="tg-yw4l">114.7</td>
+    <td class="tg-yw4l">108.655</td>
+    <td class="tg-yw4l">97.03</td>
+    <td class="tg-yw4l">113.15</td>
+    <td class="tg-yw4l">143.375</td>
+    <td class="tg-yw4l">0</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">30/09/2014 12:50</td>
+    <td class="tg-yw4l">98.58</td>
+    <td class="tg-yw4l">9.71</td>
+    <td class="tg-yw4l">28.3</td>
+    <td class="tg-yw4l">115.94</td>
+    <td class="tg-yw4l">109.585</td>
+    <td class="tg-yw4l">98.115</td>
+    <td class="tg-yw4l">116.715</td>
+    <td class="tg-yw4l">145.545</td>
+    <td class="tg-yw4l">0</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">30/09/2014 12:45</td>
+    <td class="tg-yw4l">98.58</td>
+    <td class="tg-yw4l">9.71</td>
+    <td class="tg-yw4l">27.9</td>
+    <td class="tg-yw4l">115.94</td>
+    <td class="tg-yw4l">109.585</td>
+    <td class="tg-yw4l">98.115</td>
+    <td class="tg-yw4l">113.77</td>
+    <td class="tg-yw4l">144.15</td>
+    <td class="tg-yw4l">0</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">30/09/2014 12:40</td>
+    <td class="tg-yw4l">98.115</td>
+    <td class="tg-yw4l">9.71</td>
+    <td class="tg-yw4l">27.3</td>
+    <td class="tg-yw4l">115.63</td>
+    <td class="tg-yw4l">109.12</td>
+    <td class="tg-yw4l">97.03</td>
+    <td class="tg-yw4l">114.08</td>
+    <td class="tg-yw4l">142.29</td>
+    <td class="tg-yw4l">0</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">30/09/2014 12:35</td>
+    <td class="tg-yw4l">97.03</td>
+    <td class="tg-yw4l">9.69</td>
+    <td class="tg-yw4l">26.8</td>
+    <td class="tg-yw4l">114.855</td>
+    <td class="tg-yw4l">109.275</td>
+    <td class="tg-yw4l">96.875</td>
+    <td class="tg-yw4l">114.235</td>
+    <td class="tg-yw4l">140.895</td>
+    <td class="tg-yw4l">0</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">30/09/2014 12:30</td>
+    <td class="tg-yw4l">98.58</td>
+    <td class="tg-yw4l">9.71</td>
+    <td class="tg-yw4l">26.1</td>
+    <td class="tg-yw4l">116.095</td>
+    <td class="tg-yw4l">110.36</td>
+    <td class="tg-yw4l">98.115</td>
+    <td class="tg-yw4l">117.025</td>
+    <td class="tg-yw4l">146.01</td>
+    <td class="tg-yw4l">0</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">30/09/2014 12:25</td>
+    <td class="tg-yw4l">98.115</td>
+    <td class="tg-yw4l">9.69</td>
+    <td class="tg-yw4l">25.5</td>
+    <td class="tg-yw4l">114.855</td>
+    <td class="tg-yw4l">108.965</td>
+    <td class="tg-yw4l">96.875</td>
+    <td class="tg-yw4l">114.39</td>
+    <td class="tg-yw4l">142.755</td>
+    <td class="tg-yw4l">0</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">30/09/2014 12:20</td>
+    <td class="tg-yw4l">98.27</td>
+    <td class="tg-yw4l">9.69</td>
+    <td class="tg-yw4l">24.9</td>
+    <td class="tg-yw4l">115.63</td>
+    <td class="tg-yw4l">109.585</td>
+    <td class="tg-yw4l">97.805</td>
+    <td class="tg-yw4l">114.855</td>
+    <td class="tg-yw4l">146.165</td>
+    <td class="tg-yw4l">0</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">30/09/2014 12:15</td>
+    <td class="tg-yw4l">98.425</td>
+    <td class="tg-yw4l">9.71</td>
+    <td class="tg-yw4l">24.8</td>
+    <td class="tg-yw4l">115.785</td>
+    <td class="tg-yw4l">109.74</td>
+    <td class="tg-yw4l">97.96</td>
+    <td class="tg-yw4l">113.925</td>
+    <td class="tg-yw4l">143.22</td>
+    <td class="tg-yw4l">0</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">30/09/2014 12:10</td>
+    <td class="tg-yw4l">97.805</td>
+    <td class="tg-yw4l">9.69</td>
+    <td class="tg-yw4l">24.8</td>
+    <td class="tg-yw4l">114.855</td>
+    <td class="tg-yw4l">108.655</td>
+    <td class="tg-yw4l">96.875</td>
+    <td class="tg-yw4l">115.785</td>
+    <td class="tg-yw4l">144.305</td>
+    <td class="tg-yw4l">0</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">30/09/2014 12:05</td>
+    <td class="tg-yw4l">98.425</td>
+    <td class="tg-yw4l">9.71</td>
+    <td class="tg-yw4l">24.8</td>
+    <td class="tg-yw4l">115.785</td>
+    <td class="tg-yw4l">109.74</td>
+    <td class="tg-yw4l">97.96</td>
+    <td class="tg-yw4l">113.15</td>
+    <td class="tg-yw4l">145.855</td>
+    <td class="tg-yw4l">0</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">30/09/2014 12:00</td>
+    <td class="tg-yw4l">98.115</td>
+    <td class="tg-yw4l">9.71</td>
+    <td class="tg-yw4l">24.9</td>
+    <td class="tg-yw4l">115.63</td>
+    <td class="tg-yw4l">108.965</td>
+    <td class="tg-yw4l">97.65</td>
+    <td class="tg-yw4l">115.63</td>
+    <td class="tg-yw4l">146.01</td>
+    <td class="tg-yw4l">0</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">30/09/2014 11:55</td>
+    <td class="tg-yw4l">98.58</td>
+    <td class="tg-yw4l">9.69</td>
+    <td class="tg-yw4l">24.9</td>
+    <td class="tg-yw4l">115.94</td>
+    <td class="tg-yw4l">110.05</td>
+    <td class="tg-yw4l">98.115</td>
+    <td class="tg-yw4l">115.785</td>
+    <td class="tg-yw4l">146.32</td>
+    <td class="tg-yw4l">0</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">30/09/2014 11:50</td>
+    <td class="tg-yw4l">98.27</td>
+    <td class="tg-yw4l">9.69</td>
+    <td class="tg-yw4l">24.7</td>
+    <td class="tg-yw4l">115.63</td>
+    <td class="tg-yw4l">109.895</td>
+    <td class="tg-yw4l">97.65</td>
+    <td class="tg-yw4l">115.63</td>
+    <td class="tg-yw4l">142.91</td>
+    <td class="tg-yw4l">0</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">30/09/2014 11:45</td>
+    <td class="tg-yw4l">98.58</td>
+    <td class="tg-yw4l">9.69</td>
+    <td class="tg-yw4l">24.1</td>
+    <td class="tg-yw4l">115.94</td>
+    <td class="tg-yw4l">110.36</td>
+    <td class="tg-yw4l">98.115</td>
+    <td class="tg-yw4l">116.25</td>
+    <td class="tg-yw4l">143.065</td>
+    <td class="tg-yw4l">0</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">30/09/2014 11:40</td>
+    <td class="tg-yw4l">97.96</td>
+    <td class="tg-yw4l">9.69</td>
+    <td class="tg-yw4l">23.5</td>
+    <td class="tg-yw4l">115.63</td>
+    <td class="tg-yw4l">108.965</td>
+    <td class="tg-yw4l">97.03</td>
+    <td class="tg-yw4l">113.925</td>
+    <td class="tg-yw4l">146.01</td>
+    <td class="tg-yw4l">0</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">30/09/2014 11:35</td>
+    <td class="tg-yw4l">98.425</td>
+    <td class="tg-yw4l">9.71</td>
+    <td class="tg-yw4l">23.3</td>
+    <td class="tg-yw4l">115.94</td>
+    <td class="tg-yw4l">109.74</td>
+    <td class="tg-yw4l">97.96</td>
+    <td class="tg-yw4l">115.94</td>
+    <td class="tg-yw4l">146.01</td>
+    <td class="tg-yw4l">0</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">30/09/2014 11:30</td>
+    <td class="tg-yw4l">98.425</td>
+    <td class="tg-yw4l">9.71</td>
+    <td class="tg-yw4l">23.5</td>
+    <td class="tg-yw4l">115.785</td>
+    <td class="tg-yw4l">109.895</td>
+    <td class="tg-yw4l">97.96</td>
+    <td class="tg-yw4l">112.995</td>
+    <td class="tg-yw4l">145.855</td>
+    <td class="tg-yw4l">0</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">30/09/2014 11:25</td>
+    <td class="tg-yw4l">98.425</td>
+    <td class="tg-yw4l">9.69</td>
+    <td class="tg-yw4l">23.6</td>
+    <td class="tg-yw4l">115.94</td>
+    <td class="tg-yw4l">110.05</td>
+    <td class="tg-yw4l">97.96</td>
+    <td class="tg-yw4l">113.305</td>
+    <td class="tg-yw4l">146.165</td>
+    <td class="tg-yw4l">0</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">30/09/2014 11:20</td>
+    <td class="tg-yw4l">98.115</td>
+    <td class="tg-yw4l">9.69</td>
+    <td class="tg-yw4l">23.6</td>
+    <td class="tg-yw4l">115.63</td>
+    <td class="tg-yw4l">109.585</td>
+    <td class="tg-yw4l">97.805</td>
+    <td class="tg-yw4l">116.405</td>
+    <td class="tg-yw4l">143.995</td>
+    <td class="tg-yw4l">0</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">30/09/2014 11:15</td>
+    <td class="tg-yw4l">98.58</td>
+    <td class="tg-yw4l">9.71</td>
+    <td class="tg-yw4l">23.5</td>
+    <td class="tg-yw4l">115.94</td>
+    <td class="tg-yw4l">110.205</td>
+    <td class="tg-yw4l">97.96</td>
+    <td class="tg-yw4l">114.39</td>
+    <td class="tg-yw4l">146.63</td>
+    <td class="tg-yw4l">0</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">30/09/2014 11:10</td>
+    <td class="tg-yw4l">98.58</td>
+    <td class="tg-yw4l">9.69</td>
+    <td class="tg-yw4l">23.1</td>
+    <td class="tg-yw4l">115.94</td>
+    <td class="tg-yw4l">110.205</td>
+    <td class="tg-yw4l">97.96</td>
+    <td class="tg-yw4l">113.77</td>
+    <td class="tg-yw4l">144.77</td>
+    <td class="tg-yw4l">0</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">30/09/2014 11:05</td>
+    <td class="tg-yw4l">98.735</td>
+    <td class="tg-yw4l">9.69</td>
+    <td class="tg-yw4l">22.5</td>
+    <td class="tg-yw4l">115.94</td>
+    <td class="tg-yw4l">110.36</td>
+    <td class="tg-yw4l">98.115</td>
+    <td class="tg-yw4l">116.715</td>
+    <td class="tg-yw4l">143.375</td>
+    <td class="tg-yw4l">0</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">30/09/2014 11:00</td>
+    <td class="tg-yw4l">98.58</td>
+    <td class="tg-yw4l">9.69</td>
+    <td class="tg-yw4l">21.9</td>
+    <td class="tg-yw4l">115.63</td>
+    <td class="tg-yw4l">110.205</td>
+    <td class="tg-yw4l">97.96</td>
+    <td class="tg-yw4l">114.08</td>
+    <td class="tg-yw4l">146.165</td>
+    <td class="tg-yw4l">0</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">30/09/2014 10:55</td>
+    <td class="tg-yw4l">98.735</td>
+    <td class="tg-yw4l">9.69</td>
+    <td class="tg-yw4l">21.3</td>
+    <td class="tg-yw4l">115.94</td>
+    <td class="tg-yw4l">110.205</td>
+    <td class="tg-yw4l">97.96</td>
+    <td class="tg-yw4l">113.925</td>
+    <td class="tg-yw4l">146.475</td>
+    <td class="tg-yw4l">0</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">30/09/2014 10:50</td>
+    <td class="tg-yw4l">98.58</td>
+    <td class="tg-yw4l">9.71</td>
+    <td class="tg-yw4l">20.7</td>
+    <td class="tg-yw4l">115.94</td>
+    <td class="tg-yw4l">109.895</td>
+    <td class="tg-yw4l">97.805</td>
+    <td class="tg-yw4l">116.405</td>
+    <td class="tg-yw4l">143.375</td>
+    <td class="tg-yw4l">0</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">30/09/2014 10:45</td>
+    <td class="tg-yw4l">98.27</td>
+    <td class="tg-yw4l">9.69</td>
+    <td class="tg-yw4l">20.3</td>
+    <td class="tg-yw4l">115.475</td>
+    <td class="tg-yw4l">109.275</td>
+    <td class="tg-yw4l">97.185</td>
+    <td class="tg-yw4l">114.39</td>
+    <td class="tg-yw4l">145.7</td>
+    <td class="tg-yw4l">0</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">30/09/2014 10:40</td>
+    <td class="tg-yw4l">98.58</td>
+    <td class="tg-yw4l">9.69</td>
+    <td class="tg-yw4l">19.9</td>
+    <td class="tg-yw4l">115.785</td>
+    <td class="tg-yw4l">109.585</td>
+    <td class="tg-yw4l">97.65</td>
+    <td class="tg-yw4l">115.785</td>
+    <td class="tg-yw4l">143.84</td>
+    <td class="tg-yw4l">0</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">30/09/2014 10:35</td>
+    <td class="tg-yw4l">98.58</td>
+    <td class="tg-yw4l">9.69</td>
+    <td class="tg-yw4l">19.9</td>
+    <td class="tg-yw4l">115.63</td>
+    <td class="tg-yw4l">109.275</td>
+    <td class="tg-yw4l">97.805</td>
+    <td class="tg-yw4l">114.545</td>
+    <td class="tg-yw4l">143.22</td>
+    <td class="tg-yw4l">0</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">30/09/2014 10:30</td>
+    <td class="tg-yw4l">98.425</td>
+    <td class="tg-yw4l">9.69</td>
+    <td class="tg-yw4l">19.9</td>
+    <td class="tg-yw4l">115.63</td>
+    <td class="tg-yw4l">109.275</td>
+    <td class="tg-yw4l">97.805</td>
+    <td class="tg-yw4l">115.32</td>
+    <td class="tg-yw4l">145.235</td>
+    <td class="tg-yw4l">0</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">30/09/2014 10:25</td>
+    <td class="tg-yw4l">98.425</td>
+    <td class="tg-yw4l">9.69</td>
+    <td class="tg-yw4l">19.7</td>
+    <td class="tg-yw4l">115.63</td>
+    <td class="tg-yw4l">109.43</td>
+    <td class="tg-yw4l">97.805</td>
+    <td class="tg-yw4l">112.22</td>
+    <td class="tg-yw4l">146.165</td>
+    <td class="tg-yw4l">0</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">30/09/2014 10:20</td>
+    <td class="tg-yw4l">98.425</td>
+    <td class="tg-yw4l">9.69</td>
+    <td class="tg-yw4l">19.7</td>
+    <td class="tg-yw4l">115.63</td>
+    <td class="tg-yw4l">109.275</td>
+    <td class="tg-yw4l">97.34</td>
+    <td class="tg-yw4l">115.165</td>
+    <td class="tg-yw4l">145.39</td>
+    <td class="tg-yw4l">0</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">30/09/2014 10:15</td>
+    <td class="tg-yw4l">98.58</td>
+    <td class="tg-yw4l">9.69</td>
+    <td class="tg-yw4l">19.7</td>
+    <td class="tg-yw4l">115.785</td>
+    <td class="tg-yw4l">109.585</td>
+    <td class="tg-yw4l">97.805</td>
+    <td class="tg-yw4l">112.84</td>
+    <td class="tg-yw4l">145.235</td>
+    <td class="tg-yw4l">0</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">30/09/2014 10:10</td>
+    <td class="tg-yw4l">97.805</td>
+    <td class="tg-yw4l">9.67</td>
+    <td class="tg-yw4l">19.6</td>
+    <td class="tg-yw4l">115.63</td>
+    <td class="tg-yw4l">108.655</td>
+    <td class="tg-yw4l">96.875</td>
+    <td class="tg-yw4l">113.305</td>
+    <td class="tg-yw4l">146.01</td>
+    <td class="tg-yw4l">0</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">30/09/2014 10:05</td>
+    <td class="tg-yw4l">98.58</td>
+    <td class="tg-yw4l">9.69</td>
+    <td class="tg-yw4l">19.6</td>
+    <td class="tg-yw4l">115.475</td>
+    <td class="tg-yw4l">109.275</td>
+    <td class="tg-yw4l">97.65</td>
+    <td class="tg-yw4l">112.685</td>
+    <td class="tg-yw4l">145.39</td>
+    <td class="tg-yw4l">0</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">30/09/2014 10:00</td>
+    <td class="tg-yw4l">98.58</td>
+    <td class="tg-yw4l">9.69</td>
+    <td class="tg-yw4l">19.5</td>
+    <td class="tg-yw4l">115.63</td>
+    <td class="tg-yw4l">109.585</td>
+    <td class="tg-yw4l">97.805</td>
+    <td class="tg-yw4l">115.94</td>
+    <td class="tg-yw4l">145.235</td>
+    <td class="tg-yw4l">0</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">30/09/2014 09:55</td>
+    <td class="tg-yw4l">98.735</td>
+    <td class="tg-yw4l">9.69</td>
+    <td class="tg-yw4l">19.3</td>
+    <td class="tg-yw4l">115.785</td>
+    <td class="tg-yw4l">109.585</td>
+    <td class="tg-yw4l">97.805</td>
+    <td class="tg-yw4l">113.46</td>
+    <td class="tg-yw4l">144.615</td>
+    <td class="tg-yw4l">0</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">30/09/2014 09:50</td>
+    <td class="tg-yw4l">98.58</td>
+    <td class="tg-yw4l">9.69</td>
+    <td class="tg-yw4l">19.1</td>
+    <td class="tg-yw4l">115.785</td>
+    <td class="tg-yw4l">109.585</td>
+    <td class="tg-yw4l">97.65</td>
+    <td class="tg-yw4l">116.095</td>
+    <td class="tg-yw4l">143.995</td>
+    <td class="tg-yw4l">0</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">30/09/2014 09:45</td>
+    <td class="tg-yw4l">98.89</td>
+    <td class="tg-yw4l">9.69</td>
+    <td class="tg-yw4l">19.1</td>
+    <td class="tg-yw4l">115.63</td>
+    <td class="tg-yw4l">109.43</td>
+    <td class="tg-yw4l">97.805</td>
+    <td class="tg-yw4l">116.095</td>
+    <td class="tg-yw4l">144.46</td>
+    <td class="tg-yw4l">0</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">30/09/2014 09:40</td>
+    <td class="tg-yw4l">98.735</td>
+    <td class="tg-yw4l">9.69</td>
+    <td class="tg-yw4l">19.1</td>
+    <td class="tg-yw4l">115.32</td>
+    <td class="tg-yw4l">109.12</td>
+    <td class="tg-yw4l">97.495</td>
+    <td class="tg-yw4l">112.53</td>
+    <td class="tg-yw4l">145.235</td>
+    <td class="tg-yw4l">0</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">30/09/2014 09:35</td>
+    <td class="tg-yw4l">98.89</td>
+    <td class="tg-yw4l">9.69</td>
+    <td class="tg-yw4l">18.9</td>
+    <td class="tg-yw4l">115.63</td>
+    <td class="tg-yw4l">109.43</td>
+    <td class="tg-yw4l">97.65</td>
+    <td class="tg-yw4l">114.08</td>
+    <td class="tg-yw4l">143.685</td>
+    <td class="tg-yw4l">0</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">30/09/2014 09:30</td>
+    <td class="tg-yw4l">98.58</td>
+    <td class="tg-yw4l">9.69</td>
+    <td class="tg-yw4l">18.9</td>
+    <td class="tg-yw4l">115.475</td>
+    <td class="tg-yw4l">109.275</td>
+    <td class="tg-yw4l">97.65</td>
+    <td class="tg-yw4l">115.01</td>
+    <td class="tg-yw4l">143.22</td>
+    <td class="tg-yw4l">0</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">30/09/2014 09:25</td>
+    <td class="tg-yw4l">98.89</td>
+    <td class="tg-yw4l">9.69</td>
+    <td class="tg-yw4l">18.9</td>
+    <td class="tg-yw4l">115.475</td>
+    <td class="tg-yw4l">109.275</td>
+    <td class="tg-yw4l">97.805</td>
+    <td class="tg-yw4l">112.53</td>
+    <td class="tg-yw4l">146.63</td>
+    <td class="tg-yw4l">0</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">30/09/2014 09:20</td>
+    <td class="tg-yw4l">98.58</td>
+    <td class="tg-yw4l">9.69</td>
+    <td class="tg-yw4l">19.1</td>
+    <td class="tg-yw4l">115.475</td>
+    <td class="tg-yw4l">109.43</td>
+    <td class="tg-yw4l">97.805</td>
+    <td class="tg-yw4l">111.29</td>
+    <td class="tg-yw4l">146.01</td>
+    <td class="tg-yw4l">0</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">30/09/2014 09:15</td>
+    <td class="tg-yw4l">98.735</td>
+    <td class="tg-yw4l">9.69</td>
+    <td class="tg-yw4l">19.1</td>
+    <td class="tg-yw4l">115.475</td>
+    <td class="tg-yw4l">109.43</td>
+    <td class="tg-yw4l">97.805</td>
+    <td class="tg-yw4l">115.475</td>
+    <td class="tg-yw4l">144.925</td>
+    <td class="tg-yw4l">0</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">30/09/2014 09:10</td>
+    <td class="tg-yw4l">98.735</td>
+    <td class="tg-yw4l">9.69</td>
+    <td class="tg-yw4l">19.1</td>
+    <td class="tg-yw4l">115.785</td>
+    <td class="tg-yw4l">109.585</td>
+    <td class="tg-yw4l">97.96</td>
+    <td class="tg-yw4l">112.375</td>
+    <td class="tg-yw4l">146.63</td>
+    <td class="tg-yw4l">0</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">30/09/2014 09:05</td>
+    <td class="tg-yw4l">98.425</td>
+    <td class="tg-yw4l">9.69</td>
+    <td class="tg-yw4l">19.1</td>
+    <td class="tg-yw4l">114.235</td>
+    <td class="tg-yw4l">108.965</td>
+    <td class="tg-yw4l">96.875</td>
+    <td class="tg-yw4l">115.475</td>
+    <td class="tg-yw4l">142.6</td>
+    <td class="tg-yw4l">0</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">30/09/2014 09:00</td>
+    <td class="tg-yw4l">99.045</td>
+    <td class="tg-yw4l">9.69</td>
+    <td class="tg-yw4l">19.1</td>
+    <td class="tg-yw4l">115.475</td>
+    <td class="tg-yw4l">109.43</td>
+    <td class="tg-yw4l">97.96</td>
+    <td class="tg-yw4l">112.53</td>
+    <td class="tg-yw4l">146.01</td>
+    <td class="tg-yw4l">0</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">30/09/2014 08:55</td>
+    <td class="tg-yw4l">99.045</td>
+    <td class="tg-yw4l">9.69</td>
+    <td class="tg-yw4l">18.9</td>
+    <td class="tg-yw4l">115.63</td>
+    <td class="tg-yw4l">109.585</td>
+    <td class="tg-yw4l">98.115</td>
+    <td class="tg-yw4l">116.095</td>
+    <td class="tg-yw4l">144.15</td>
+    <td class="tg-yw4l">0</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">30/09/2014 08:50</td>
+    <td class="tg-yw4l">98.89</td>
+    <td class="tg-yw4l">9.69</td>
+    <td class="tg-yw4l">18.7</td>
+    <td class="tg-yw4l">115.63</td>
+    <td class="tg-yw4l">109.585</td>
+    <td class="tg-yw4l">97.805</td>
+    <td class="tg-yw4l">115.165</td>
+    <td class="tg-yw4l">143.53</td>
+    <td class="tg-yw4l">0</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">30/09/2014 08:45</td>
+    <td class="tg-yw4l">98.735</td>
+    <td class="tg-yw4l">9.69</td>
+    <td class="tg-yw4l">18.5</td>
+    <td class="tg-yw4l">115.63</td>
+    <td class="tg-yw4l">109.585</td>
+    <td class="tg-yw4l">98.115</td>
+    <td class="tg-yw4l">115.475</td>
+    <td class="tg-yw4l">143.375</td>
+    <td class="tg-yw4l">0</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">30/09/2014 08:40</td>
+    <td class="tg-yw4l">98.425</td>
+    <td class="tg-yw4l">9.69</td>
+    <td class="tg-yw4l">18.3</td>
+    <td class="tg-yw4l">115.165</td>
+    <td class="tg-yw4l">108.5</td>
+    <td class="tg-yw4l">97.03</td>
+    <td class="tg-yw4l">114.39</td>
+    <td class="tg-yw4l">144.615</td>
+    <td class="tg-yw4l">0</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">30/09/2014 08:35</td>
+    <td class="tg-yw4l">98.89</td>
+    <td class="tg-yw4l">9.67</td>
+    <td class="tg-yw4l">18</td>
+    <td class="tg-yw4l">115.32</td>
+    <td class="tg-yw4l">109.275</td>
+    <td class="tg-yw4l">97.495</td>
+    <td class="tg-yw4l">114.7</td>
+    <td class="tg-yw4l">142.91</td>
+    <td class="tg-yw4l">0</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">30/09/2014 08:30</td>
+    <td class="tg-yw4l">98.89</td>
+    <td class="tg-yw4l">9.69</td>
+    <td class="tg-yw4l">17.7</td>
+    <td class="tg-yw4l">115.32</td>
+    <td class="tg-yw4l">109.275</td>
+    <td class="tg-yw4l">97.495</td>
+    <td class="tg-yw4l">112.685</td>
+    <td class="tg-yw4l">145.545</td>
+    <td class="tg-yw4l">0</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">30/09/2014 08:25</td>
+    <td class="tg-yw4l">98.89</td>
+    <td class="tg-yw4l">9.69</td>
+    <td class="tg-yw4l">17.5</td>
+    <td class="tg-yw4l">115.475</td>
+    <td class="tg-yw4l">109.275</td>
+    <td class="tg-yw4l">97.96</td>
+    <td class="tg-yw4l">112.53</td>
+    <td class="tg-yw4l">146.165</td>
+    <td class="tg-yw4l">0</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">30/09/2014 08:20</td>
+    <td class="tg-yw4l">99.045</td>
+    <td class="tg-yw4l">9.69</td>
+    <td class="tg-yw4l">17.5</td>
+    <td class="tg-yw4l">115.32</td>
+    <td class="tg-yw4l">109.12</td>
+    <td class="tg-yw4l">97.96</td>
+    <td class="tg-yw4l">113.305</td>
+    <td class="tg-yw4l">145.39</td>
+    <td class="tg-yw4l">0</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">30/09/2014 08:15</td>
+    <td class="tg-yw4l">98.89</td>
+    <td class="tg-yw4l">9.69</td>
+    <td class="tg-yw4l">17.3</td>
+    <td class="tg-yw4l">115.475</td>
+    <td class="tg-yw4l">109.12</td>
+    <td class="tg-yw4l">97.96</td>
+    <td class="tg-yw4l">113.615</td>
+    <td class="tg-yw4l">146.94</td>
+    <td class="tg-yw4l">0</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">30/09/2014 08:10</td>
+    <td class="tg-yw4l">98.735</td>
+    <td class="tg-yw4l">9.69</td>
+    <td class="tg-yw4l">17.3</td>
+    <td class="tg-yw4l">115.32</td>
+    <td class="tg-yw4l">109.12</td>
+    <td class="tg-yw4l">97.96</td>
+    <td class="tg-yw4l">115.94</td>
+    <td class="tg-yw4l">144.15</td>
+    <td class="tg-yw4l">0</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">30/09/2014 08:05</td>
+    <td class="tg-yw4l">98.89</td>
+    <td class="tg-yw4l">9.69</td>
+    <td class="tg-yw4l">17.2</td>
+    <td class="tg-yw4l">115.475</td>
+    <td class="tg-yw4l">109.275</td>
+    <td class="tg-yw4l">97.805</td>
+    <td class="tg-yw4l">113.46</td>
+    <td class="tg-yw4l">146.94</td>
+    <td class="tg-yw4l">0</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">30/09/2014 08:00</td>
+    <td class="tg-yw4l">98.735</td>
+    <td class="tg-yw4l">9.69</td>
+    <td class="tg-yw4l">17.2</td>
+    <td class="tg-yw4l">114.39</td>
+    <td class="tg-yw4l">108.81</td>
+    <td class="tg-yw4l">97.185</td>
+    <td class="tg-yw4l">113.925</td>
+    <td class="tg-yw4l">145.545</td>
+    <td class="tg-yw4l">0</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">30/09/2014 07:55</td>
+    <td class="tg-yw4l">98.89</td>
+    <td class="tg-yw4l">9.69</td>
+    <td class="tg-yw4l">16.9</td>
+    <td class="tg-yw4l">115.475</td>
+    <td class="tg-yw4l">109.43</td>
+    <td class="tg-yw4l">97.96</td>
+    <td class="tg-yw4l">115.32</td>
+    <td class="tg-yw4l">143.995</td>
+    <td class="tg-yw4l">0</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">30/09/2014 07:50</td>
+    <td class="tg-yw4l">98.89</td>
+    <td class="tg-yw4l">9.69</td>
+    <td class="tg-yw4l">16.7</td>
+    <td class="tg-yw4l">115.32</td>
+    <td class="tg-yw4l">109.43</td>
+    <td class="tg-yw4l">98.115</td>
+    <td class="tg-yw4l">116.095</td>
+    <td class="tg-yw4l">143.685</td>
+    <td class="tg-yw4l">0</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">30/09/2014 07:45</td>
+    <td class="tg-yw4l">98.735</td>
+    <td class="tg-yw4l">9.69</td>
+    <td class="tg-yw4l">16.3</td>
+    <td class="tg-yw4l">115.32</td>
+    <td class="tg-yw4l">109.275</td>
+    <td class="tg-yw4l">98.115</td>
+    <td class="tg-yw4l">113.46</td>
+    <td class="tg-yw4l">147.095</td>
+    <td class="tg-yw4l">0</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">30/09/2014 07:40</td>
+    <td class="tg-yw4l">98.89</td>
+    <td class="tg-yw4l">9.69</td>
+    <td class="tg-yw4l">16</td>
+    <td class="tg-yw4l">115.32</td>
+    <td class="tg-yw4l">108.965</td>
+    <td class="tg-yw4l">98.115</td>
+    <td class="tg-yw4l">116.095</td>
+    <td class="tg-yw4l">143.685</td>
+    <td class="tg-yw4l">0</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">30/09/2014 07:35</td>
+    <td class="tg-yw4l">98.735</td>
+    <td class="tg-yw4l">9.69</td>
+    <td class="tg-yw4l">15.7</td>
+    <td class="tg-yw4l">115.01</td>
+    <td class="tg-yw4l">108.345</td>
+    <td class="tg-yw4l">97.96</td>
+    <td class="tg-yw4l">115.94</td>
+    <td class="tg-yw4l">143.685</td>
+    <td class="tg-yw4l">0</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">30/09/2014 07:30</td>
+    <td class="tg-yw4l">98.58</td>
+    <td class="tg-yw4l">9.69</td>
+    <td class="tg-yw4l">15.6</td>
+    <td class="tg-yw4l">115.32</td>
+    <td class="tg-yw4l">108.345</td>
+    <td class="tg-yw4l">97.805</td>
+    <td class="tg-yw4l">112.685</td>
+    <td class="tg-yw4l">146.785</td>
+    <td class="tg-yw4l">0</td>
+  </tr>
+</table>
+			</div>
+		</div>
+		<footer >
+					Start from 2015<br>
+					Designed by Kyra<br>
+					Developed by Kyra and GGJason of BGBIM<br>
+					Powered by <a href="http://getbootstrap.com/">Bootstrap</a>
+		</footer> 
+		<script src="js/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+	</body>
+</html>
