@@ -1,0 +1,4 @@
+UTC+8 20161025_05:39:23	1477388363830	 : csv.php/handleCSV()	 : Cannot open the file.
+UTC+8 20161025_05:39:23	1477388363830	 : csv.php/handleCSV()	 : The File ./tmpData/4. Green Roof Property_Example for database.docxis not a CSV File
+UTC+8 20161025_05:39:23	1477388363830	 : upload.php/ 	 : File 14773883632. MeasureData_20140901-20140930_Part 1.csv Upload to ./Uploads/1610/
+UTC+8 20161025_05:39:23	1477388363831	 : upload.php/ 	 : File 14773883632. MeasureData_20140901-20140930_Part 1.csv is checked to be a data table with csv extention and be record in history. Prepare for update to database.

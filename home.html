@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<!--For PC & Desktop Version-->
+<html>
+	<head>
+		<title>BGBIM - Green Roof Data Station</title>
+<!--		<script src="./path/to/dropzone.js"></script>-->
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="css/index.css">
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link href="css/jquery-ui.css" rel="stylesheet">
+		<script src="js/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/jquery-ui.js"></script>
+	</head>
+	<body>
+		<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"> 
+						<span class="sr-only">Toggle navigation</span> 
+						<span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> 
+					</button> 
+					<a class="navbar-brand" href="home.html">Blue Green BIM</a>
+				
+				
+				</div>
+				<div id="navbar" class="collapse navbar-collapse">
+					<ul class="nav navbar-nav">
+							<li><a href="file.html">Files</a></li>
+							<li><a href="data.php">Data</a></li>
+							<li><a href="help.html">Help</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		
+		<div class="container" id="interface">
+			<div class="starter-template">
+				<div id="menu">
+					<script>
+						var req = new XMLHttpRequest();
+						req.onreadystatechange = function() {
+						if (this.readyState == 4 && this.status == 200) {
+							document.write(this.responseText);
+						}};
+						req.open("GET","./login.php?embed=true",false);
+						req.send();
+					</script>
+					
+					<br>
+					<form action="upload.php" method="post" enctype="multipart/form-data" id="inputForm" class="secure">
+						<p>Select File to upload:</p>
+						<input type="file" name="fileToUpload"  id="fileToUpload" data-filename-placement="inside" style="width:50%;float:left" class="file"></input><br>
+						<input type="submit" value="Upload" name="submit" class="btn btn-sm btn-primary" style="float:left"></input><br>
+					</form>
+					<br><br>
+					<form action = "exact.php" method="get" name="export" id="timeForm"  class="secure" onsubmit="return valid();">
+						Starting Time:<br>
+						<input type="date" name="startDate" id="startDate"></input><input type="time" name="startTime" id="startTime" value="00:00"></input><br>
+						Endding Time:<br>
+						<script> 
+							var req1 = new XMLHttpRequest();
+							req1.onreadystatechange = function() {
+								if (this.readyState == 4 && this.status == 200) {
+									var minDate = this.responseText;
+
+									minDate = minDate.slice(0,4) + "-" + minDate.slice(4,6) + "-" + minDate.slice(6,8);
+									document.getElementById("startDate").min = minDate;
+									document.getElementById("endDate").min = minDate;
+									document.getElementById("startDate").value = minDate;
+								}
+							};
+							req1.open("GET","./xiData.php?min=true",true);
+							req1.send();
+						</script>
+						<input type="date" name="endDate" id="endDate"></input><input type="time" name="endTime" id="endTime" value="00:00"></input><br>
+
+						<script>
+							
+							var req2 = new XMLHttpRequest();
+							req2.onreadystatechange = function() {
+								if (this.readyState == 4 && this.status == 200) {
+									var maxDate = this.responseText;
+									maxDate = maxDate.slice(0,4) + "-" + maxDate.slice(4,6) + "-" + maxDate.slice(6,8);
+									document.getElementById("endDate").value = maxDate;
+									document.getElementById("startDate").max = maxDate;
+									document.getElementById("endDate").max = maxDate;
+								}
+							};
+							req2.open("GET","./xiData.php?max=true",true);
+							req2.send();
+							document.getElementById("endDate").max = document.getElementById("endDate").max; 	
+						</script>
+
+						<script>
+							function changeDisplay(){
+								var selection = document.getElementById('chooseTableList');
+								for (var i = 0 ; i != selection.options.length; i++) {
+									if(selection.options[i].index == selection.selectedIndex)
+										document.getElementById(selection.options[i].text).style.display = "block";
+									else{
+										document.getElementById(selection.options[i].text).style.display = "none";
+									}
+								}
+							}
+						</script>
+						<input type = "submit" name="download" value="Download"  class="btn btn-primary"></input>
+						<input type = "submit" name="draw" value="Draw"  id="draw" class="btn btn-primary"></input><br>
+					
+
+
+
+						 <select name="chooseTableList" id="chooseTableList" onchange="changeDisplay()">
+							<option selected="selected" value="Weather_Station">Weather_Station</option>
+							<option value="Green_Roof_A" >Green_Roof_A</option>
+							<option value="Green_Roof_B">Green_Roof_B</option>
+							<option value="Green_Roof_C">Green_Roof_C</option>
+							<option value="Measure_Instrument">Measure_Instrument</option>
+							<!-- <option value="Files">Files</option> -->
+						</select>
+						<div id="Weather_Station" method = "get" style = "display: block">
+							<input id="Weather_Station_0" type="checkbox" name="W[]" value="1" />Ave AirTemp (degC)</input></br>
+							<input id="Weather_Station_1" type="checkbox" name="W[]" value="2" />Ave Humidity (%)</input></br>
+							<input id="Weather_Station_2" type="checkbox" name="W[]" value="3" />Min WndSpd (m/s)</input></br>
+							<input id="Weather_Station_3" type="checkbox" name="W[]" value="4" />Ave WndSpd (m/s)</input></br>
+							<input id="Weather_Station_4" type="checkbox" name="W[]" value="5" />Max WndSpd (m/s)</input></br>
+							<input id="Weather_Station_5" type="checkbox" name="W[]" value="6" />Ave WndDir (deg)</input></br>
+							<input id="Weather_Station_6" type="checkbox" name="W[]" value="7" />Ave Sigma (deg)</input></br>
+							<input id="Weather_Station_7" type="checkbox" name="W[]" value="8" />Total Rain (mm)</input></br>
+							<input id="Weather_Station_8" type="checkbox" name="W[]" value="9" />Ave GSR (w/m?</input></br>
+							<input id="Weather_Station_9" type="checkbox" name="W[]" value="10" />Min Battery (V)</input></br>
+							<input id="Weather_Station_10" type="checkbox" name="W[]" value="11" />Ave Battery (V)</input></br>
+							<input id="Weather_Station_11" type="checkbox" name="W[]" value="12" />Max Battery (V)</input></br>
+							<input id="Weather_Station_12" type="checkbox" name="W[]" value="13" />Ave DeltaT (degC)</input></br>
+						</div>
+
+						<div id="Green_Roof_A" method = "get" style = "display: none">
+							<!-- in part1 -->
+							<input id="Green_Roof_A_0" type="checkbox" name="GA[]" value="1" />Lower_Temperature</input></br>
+							<input id="Green_Roof_A_1" type="checkbox" name="GA[]" value="2" />Upper_Temperature</input></br>
+							<!-- in part1 end-->
+							<input id="Green_Roof_A_2" type="checkbox" name="GA[]" value="3" />Lower_Soil_Moisture</input></br>
+							<input id="Green_Roof_A_3" type="checkbox" name="GA[]" value="4" />Upper_Soil_Moisture</input></br>
+							<input id="Green_Roof_A_4" type="checkbox" name="GA[]" value="5" />Flow_Total</input></br>
+							<input id="Green_Roof_A_5" type="checkbox" name="GA[]" value="6" />Flow_(TOT)</input></br>
+						</div>
+
+						<div id="Green_Roof_B" method = "get" style = "display: none">
+							<!-- in part1 -->
+							<input id="Green_Roof_B_0" type="checkbox" name="GB[]" value="1" />Lower_Temperature</input></br>
+							<!-- in part1 end-->
+							<input id="Green_Roof_B_1" type="checkbox" name="GB[]" value="2" />Upper_Temperature</input></br>
+							<input id="Green_Roof_B_2" type="checkbox" name="GB[]" value="3" />Lower_Soil_Moisture</input></br>
+							<input id="Green_Roof_B_3" type="checkbox" name="GB[]" value="4" />Upper_Soil_Moisture</input></br>
+							<input id="Green_Roof_B_4" type="checkbox" name="GB[]" value="5" />Flow_Total</input></br>
+							<input id="Green_Roof_B_5" type="checkbox" name="GB[]" value="6" />Flow_(TOT)</input></br>
+						</div>
+
+						<div id="Green_Roof_C" method = "get" style = "display: none">
+							<!-- in part1 -->
+							<input id="Green_Roof_C_0" type="checkbox" name="GC[]" value="1" />Lower_Temperature</input></br>
+							<!-- in part1 end-->
+							<input id="Green_Roof_C_1" type="checkbox" name="GC[]" value="2" />Upper_Temperature</input></br>
+							<input id="Green_Roof_C_2" type="checkbox" name="GC[]" value="3" />Lower_Soil_Moisture</input></br>
+							<input id="Green_Roof_C_3" type="checkbox" name="GC[]" value="4" />Upper_Soil_Moisture</input></br>
+							<input id="Green_Roof_C_4" type="checkbox" name="GC[]" value="5" />Flow_Total</input></br>
+							<input id="Green_Roof_C_5" type="checkbox" name="GC[]" value="6" />Flow_(TOT)</input></br>
+						</div>
+
+						<div id="Measure_Instrument" method = "get" style = "display: none">
+							<!-- in part1-->
+							<input id="Measure_Instrument_0" type="checkbox" name="M[]" value="1" />Internal_Battery</input></br>
+							<input id="Measure_Instrument_1" type="checkbox" name="M[]" value="2" />External_Supply</input></br>
+							<!-- in part1 end-->
+							<input id="Measure_Instrument_2" type="checkbox" name="M[]" value="3" />Battery</input></br>
+							<input id="Measure_Instrument_3" type="checkbox" name="M[]" value="4" />Temperature</input></br>
+						</div>
+					</form>
+					<script>
+						function valid(){
+							var x = $("[name='W[]']:checked").length+$("[name='GA[]']:checked").length+$("[name='GB[]']:checked").length+$("[name='GC[]']:checked").length+$("[name='M[]']:checked").length;
+							if(x==0){
+								alert("Please select the field you want to react");
+								return false;
+							}
+						}
+					</script>
+				</div>
+				<div id="main">
+					<h3>Green Roof Data Station</h3>
+					Welcome To Blue Green BIM.
+					This is the data station for greenroof experiment
+					
+				</div>
+			</div>
+		</div>
+		<footer >
+					Start from 2015<br>
+					Designed by Kyra<br>
+					Developed by Kyra and GGJason of BGBIM<br>
+					Powered by <a href="http://getbootstrap.com/">Bootstrap</a>
+		</footer> 
+	</body>
+</html>

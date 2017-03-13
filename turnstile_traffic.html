@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<!-- saved from url=(0051)http://140.112.12.21/vie2015/turnstile_traffic.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <script type="text/javascript" src="./turnstile_traffic_files/d3.js"></script>
+    <style>
+    .axis {
+        font-family: arial;
+        font-size:0.6em;
+    }
+    path {
+        fill:none;
+        stroke:black;
+        stroke-width:2px;
+    }
+    .tick {
+        fill:none;
+        stroke:black;
+    }
+    circle{
+        stroke:black;
+        stroke-width:0.5px;
+    }
+    circle.times_square{
+        fill:DeepPink;
+    }
+    circle.grand_central{
+        fill:MediumSeaGreen;
+    }
+    path.times_square{
+        stroke:DeepPink;
+    }
+    path.grand_central{
+        stroke:MediumSeaGreen;
+    }
+    
+    
+    
+    </style>
+    <script>
+    function draw(data) {
+        "use strict";
+        var margin = 50,
+            width = 700 - margin,
+            height = 300 - margin;
+        
+        var count_extent = d3.extent(
+            data.times_square.concat(data.grand_central),
+            function(d){return d.count}
+        );
+
+        var time_extent = d3.extent(
+            data.times_square.concat(data.grand_central),
+            function(d){return d.time}
+        )
+        
+        var count_scale = d3.scale.linear()
+            .domain(count_extent)
+            .range([height, margin]);
+        
+        var time_scale = d3.time.scale()
+            .domain(time_extent)
+            .range([margin, width])
+        
+        var time_axis = d3.svg.axis()
+            .scale(time_scale)
+        
+        var count_axis = d3.svg.axis()
+            .scale(count_scale)
+            .orient("left")
+        
+        var line = d3.svg.line()
+            .x(function(d){return time_scale(d.time)})
+            .y(function(d){return count_scale(d.count)})
+            .interpolate("linear")
+                    
+        d3.select("body") 
+          .append("svg")
+            .attr("class","chart") 
+            .attr("width", width+margin)
+            .attr("height", height+margin)
+        
+        d3.select('svg')
+          .append('path')
+            .attr('d', line(data.times_square))
+            .attr('class', 'times_square')
+        
+        d3.select('svg')
+          .append('path')
+            .attr('d', line(data.grand_central))
+            .attr('class', 'grand_central')
+        
+        
+        d3.select("svg")
+          .selectAll("circle.times_square")
+          .data(data.times_square)
+          .enter()
+          .append("circle")
+            .attr("class", "times_square")
+
+        d3.select("svg")
+          .selectAll("circle.grand_central")
+          .data(data.grand_central)
+          .enter()
+          .append("circle")
+            .attr("class", "grand_central")
+    
+        d3.selectAll("circle")
+            .attr("cy", function(d){return count_scale(d.count);})
+            .attr("cx", function(d){return time_scale(d.time);})
+            .attr("r", 3)
+            
+        d3.select("svg")
+          .append("g")
+          .attr("class", "x axis")
+          .attr("transform", "translate(0," + height + ")")
+          .call(time_axis);
+         
+        d3.select("svg")
+          .append("g")
+          .attr("class", "y axis")
+          .attr("transform", "translate(" + margin + ",0)")
+          .call(count_axis);
+    
+      d3.select('.y.axis')
+          .append('text')
+          .text('mean number of turnstile revolutions')
+          .attr('transform', "rotate (90, " + -margin + ", 0)")
+          .attr('x', 20)
+          .attr('y', 0)
+                    
+      d3.select('.x.axis')
+        .append('text')
+          .text('time')
+          .attr('x', function(){return (width / 1.6) - margin})
+          .attr('y', margin/1.5)
+    
+    
+    
+    }
+    
+    
+    </script>
+</head>
+<body>
+    <script>
+        d3.json('data/turnstile_traffic.json', draw);
+    </script>
+
+
+<svg class="chart" width="700" height="300"><path d="M50,245.8480492132186L65,236.20244629049284L80,211.84427973713156L95,173.550658552897L110,186.34670336655114L125,212.27484012889175L140,247.16598407092363L155,239.58917132324086L170,223.9052214429024L185,197.5570257617713L200,213.88156549326524L215,234.11790390599523L230,246.1420904563719L245,206.34150790097664L260,200.80723164591245L275,109.34465281577653L290,178.62286999729173L305,235.95566167570345L320,245.18645641612363L323.1177083333333,248.93548226632842L335,226.25230065164402L350,190.5367910814859L365,103.60034710131708L380,169.20829947990075L395,233.5613258385979L410,245.64852122679312L425,202.76050561828805L440,197.18947420782968L454.99999999999994,102.5659520137956L470,170.60499538487898L485,233.05200439956445L500,245.77978963891513L515,204.70852885417875L530,190.4199621946973L545,239.48415659354325L560,164.37762191381051L575,229.8700580897268L590,245.31772482824564L605,205.52239300933525L620,189.52339893990393L635,98.49663123801312L650,162.9179171710137" class="times_square"></path><path d="M50,248.39824901755958L65,225.57578470874995L80,190.34721185892653L95,174.91667910262152L110,204.43466149330945L125,235.7832164353579L140,250L155,233.84320748147042L170,211.07048699199123L185,195.67974929115056L200,225.8941451524648L215,238.53902402626474L230,242.07083519872657L239.57916666666665,138.03992770564923L245,215.55655043194216L260,176.12047953041832L261.6916666666667,247.4502739463193L275,123.47588490701457L290,159.67517285977215L305,238.91707705317614L320,238.99666716410485L335,107.60334278465896L350,164.40083569616473L365,63.012983136845236L380,157.8943441277421L395,238.83748694224744L410,240.9665224095906L425,152.3429338904641L440,176.03094065562354L454.99999999999994,56.44679898522605L470,156.0637715763816L485,237.75307168084365L500,240.79739342386708L515,151.26846739292642L530,166.10207431726607L545,58.92404118788241L560,146.51295826493555L575,233.45520569069294L590,241.60324329702036L605,161.7345669800527L620,162.00318360443714L635,50L650,156.53136347808783" class="grand_central"></path><circle class="times_square" cy="245.8480492132186" cx="50" r="3"></circle><circle class="times_square" cy="236.20244629049284" cx="65" r="3"></circle><circle class="times_square" cy="211.84427973713156" cx="80" r="3"></circle><circle class="times_square" cy="173.550658552897" cx="95" r="3"></circle><circle class="times_square" cy="186.34670336655114" cx="110" r="3"></circle><circle class="times_square" cy="212.27484012889175" cx="125" r="3"></circle><circle class="times_square" cy="247.16598407092363" cx="140" r="3"></circle><circle class="times_square" cy="239.58917132324086" cx="155" r="3"></circle><circle class="times_square" cy="223.9052214429024" cx="170" r="3"></circle><circle class="times_square" cy="197.5570257617713" cx="185" r="3"></circle><circle class="times_square" cy="213.88156549326524" cx="200" r="3"></circle><circle class="times_square" cy="234.11790390599523" cx="215" r="3"></circle><circle class="times_square" cy="246.1420904563719" cx="230" r="3"></circle><circle class="times_square" cy="206.34150790097664" cx="245" r="3"></circle><circle class="times_square" cy="200.80723164591245" cx="260" r="3"></circle><circle class="times_square" cy="109.34465281577653" cx="275" r="3"></circle><circle class="times_square" cy="178.62286999729173" cx="290" r="3"></circle><circle class="times_square" cy="235.95566167570345" cx="305" r="3"></circle><circle class="times_square" cy="245.18645641612363" cx="320" r="3"></circle><circle class="times_square" cy="248.93548226632842" cx="323.1177083333333" r="3"></circle><circle class="times_square" cy="226.25230065164402" cx="335" r="3"></circle><circle class="times_square" cy="190.5367910814859" cx="350" r="3"></circle><circle class="times_square" cy="103.60034710131708" cx="365" r="3"></circle><circle class="times_square" cy="169.20829947990075" cx="380" r="3"></circle><circle class="times_square" cy="233.5613258385979" cx="395" r="3"></circle><circle class="times_square" cy="245.64852122679312" cx="410" r="3"></circle><circle class="times_square" cy="202.76050561828805" cx="425" r="3"></circle><circle class="times_square" cy="197.18947420782968" cx="440" r="3"></circle><circle class="times_square" cy="102.5659520137956" cx="454.99999999999994" r="3"></circle><circle class="times_square" cy="170.60499538487898" cx="470" r="3"></circle><circle class="times_square" cy="233.05200439956445" cx="485" r="3"></circle><circle class="times_square" cy="245.77978963891513" cx="500" r="3"></circle><circle class="times_square" cy="204.70852885417875" cx="515" r="3"></circle><circle class="times_square" cy="190.4199621946973" cx="530" r="3"></circle><circle class="times_square" cy="239.48415659354325" cx="545" r="3"></circle><circle class="times_square" cy="164.37762191381051" cx="560" r="3"></circle><circle class="times_square" cy="229.8700580897268" cx="575" r="3"></circle><circle class="times_square" cy="245.31772482824564" cx="590" r="3"></circle><circle class="times_square" cy="205.52239300933525" cx="605" r="3"></circle><circle class="times_square" cy="189.52339893990393" cx="620" r="3"></circle><circle class="times_square" cy="98.49663123801312" cx="635" r="3"></circle><circle class="times_square" cy="162.9179171710137" cx="650" r="3"></circle><circle class="grand_central" cy="248.39824901755958" cx="50" r="3"></circle><circle class="grand_central" cy="225.57578470874995" cx="65" r="3"></circle><circle class="grand_central" cy="190.34721185892653" cx="80" r="3"></circle><circle class="grand_central" cy="174.91667910262152" cx="95" r="3"></circle><circle class="grand_central" cy="204.43466149330945" cx="110" r="3"></circle><circle class="grand_central" cy="235.7832164353579" cx="125" r="3"></circle><circle class="grand_central" cy="250" cx="140" r="3"></circle><circle class="grand_central" cy="233.84320748147042" cx="155" r="3"></circle><circle class="grand_central" cy="211.07048699199123" cx="170" r="3"></circle><circle class="grand_central" cy="195.67974929115056" cx="185" r="3"></circle><circle class="grand_central" cy="225.8941451524648" cx="200" r="3"></circle><circle class="grand_central" cy="238.53902402626474" cx="215" r="3"></circle><circle class="grand_central" cy="242.07083519872657" cx="230" r="3"></circle><circle class="grand_central" cy="138.03992770564923" cx="239.57916666666665" r="3"></circle><circle class="grand_central" cy="215.55655043194216" cx="245" r="3"></circle><circle class="grand_central" cy="176.12047953041832" cx="260" r="3"></circle><circle class="grand_central" cy="247.4502739463193" cx="261.6916666666667" r="3"></circle><circle class="grand_central" cy="123.47588490701457" cx="275" r="3"></circle><circle class="grand_central" cy="159.67517285977215" cx="290" r="3"></circle><circle class="grand_central" cy="238.91707705317614" cx="305" r="3"></circle><circle class="grand_central" cy="238.99666716410485" cx="320" r="3"></circle><circle class="grand_central" cy="107.60334278465896" cx="335" r="3"></circle><circle class="grand_central" cy="164.40083569616473" cx="350" r="3"></circle><circle class="grand_central" cy="63.012983136845236" cx="365" r="3"></circle><circle class="grand_central" cy="157.8943441277421" cx="380" r="3"></circle><circle class="grand_central" cy="238.83748694224744" cx="395" r="3"></circle><circle class="grand_central" cy="240.9665224095906" cx="410" r="3"></circle><circle class="grand_central" cy="152.3429338904641" cx="425" r="3"></circle><circle class="grand_central" cy="176.03094065562354" cx="440" r="3"></circle><circle class="grand_central" cy="56.44679898522605" cx="454.99999999999994" r="3"></circle><circle class="grand_central" cy="156.0637715763816" cx="470" r="3"></circle><circle class="grand_central" cy="237.75307168084365" cx="485" r="3"></circle><circle class="grand_central" cy="240.79739342386708" cx="500" r="3"></circle><circle class="grand_central" cy="151.26846739292642" cx="515" r="3"></circle><circle class="grand_central" cy="166.10207431726607" cx="530" r="3"></circle><circle class="grand_central" cy="58.92404118788241" cx="545" r="3"></circle><circle class="grand_central" cy="146.51295826493555" cx="560" r="3"></circle><circle class="grand_central" cy="233.45520569069294" cx="575" r="3"></circle><circle class="grand_central" cy="241.60324329702036" cx="590" r="3"></circle><circle class="grand_central" cy="161.7345669800527" cx="605" r="3"></circle><circle class="grand_central" cy="162.00318360443714" cx="620" r="3"></circle><circle class="grand_central" cy="50" cx="635" r="3"></circle><circle class="grand_central" cy="156.53136347808783" cx="650" r="3"></circle><g class="x axis" transform="translate(0,250)"><g transform="translate(65,0)" style="opacity: 1;"><line class="tick" y2="6" x2="0"></line><text y="9" x="0" dy=".71em" text-anchor="middle">Feb 05</text></g><g transform="translate(110,0)" style="opacity: 1;"><line class="tick" y2="6" x2="0"></line><text y="9" x="0" dy=".71em" text-anchor="middle">12 PM</text></g><g transform="translate(155,0)" style="opacity: 1;"><line class="tick" y2="6" x2="0"></line><text y="9" x="0" dy=".71em" text-anchor="middle">Mon 06</text></g><g transform="translate(200,0)" style="opacity: 1;"><line class="tick" y2="6" x2="0"></line><text y="9" x="0" dy=".71em" text-anchor="middle">12 PM</text></g><g transform="translate(245,0)" style="opacity: 1;"><line class="tick" y2="6" x2="0"></line><text y="9" x="0" dy=".71em" text-anchor="middle">Tue 07</text></g><g transform="translate(290,0)" style="opacity: 1;"><line class="tick" y2="6" x2="0"></line><text y="9" x="0" dy=".71em" text-anchor="middle">12 PM</text></g><g transform="translate(335,0)" style="opacity: 1;"><line class="tick" y2="6" x2="0"></line><text y="9" x="0" dy=".71em" text-anchor="middle">Wed 08</text></g><g transform="translate(380,0)" style="opacity: 1;"><line class="tick" y2="6" x2="0"></line><text y="9" x="0" dy=".71em" text-anchor="middle">12 PM</text></g><g transform="translate(425,0)" style="opacity: 1;"><line class="tick" y2="6" x2="0"></line><text y="9" x="0" dy=".71em" text-anchor="middle">Thu 09</text></g><g transform="translate(470,0)" style="opacity: 1;"><line class="tick" y2="6" x2="0"></line><text y="9" x="0" dy=".71em" text-anchor="middle">12 PM</text></g><g transform="translate(515,0)" style="opacity: 1;"><line class="tick" y2="6" x2="0"></line><text y="9" x="0" dy=".71em" text-anchor="middle">Fri 10</text></g><g transform="translate(560,0)" style="opacity: 1;"><line class="tick" y2="6" x2="0"></line><text y="9" x="0" dy=".71em" text-anchor="middle">12 PM</text></g><g transform="translate(605,0)" style="opacity: 1;"><line class="tick" y2="6" x2="0"></line><text y="9" x="0" dy=".71em" text-anchor="middle">Sat 11</text></g><g transform="translate(650,0)" style="opacity: 1;"><line class="tick" y2="6" x2="0"></line><text y="9" x="0" dy=".71em" text-anchor="middle">12 PM</text></g><path class="domain" d="M50,6V0H650V6"></path><text x="356.25" y="33.333333333333336">time</text></g><g class="y axis" transform="translate(50,0)"><g transform="translate(0,233.81336118987215)" style="opacity: 1;"><line class="tick" x2="-6" y2="0"></line><text x="-9" y="0" dy=".32em" text-anchor="end">100</text></g><g transform="translate(0,214.91070984430183)" style="opacity: 1;"><line class="tick" x2="-6" y2="0"></line><text x="-9" y="0" dy=".32em" text-anchor="end">200</text></g><g transform="translate(0,196.00805849873154)" style="opacity: 1;"><line class="tick" x2="-6" y2="0"></line><text x="-9" y="0" dy=".32em" text-anchor="end">300</text></g><g transform="translate(0,177.1054071531612)" style="opacity: 1;"><line class="tick" x2="-6" y2="0"></line><text x="-9" y="0" dy=".32em" text-anchor="end">400</text></g><g transform="translate(0,158.2027558075909)" style="opacity: 1;"><line class="tick" x2="-6" y2="0"></line><text x="-9" y="0" dy=".32em" text-anchor="end">500</text></g><g transform="translate(0,139.30010446202058)" style="opacity: 1;"><line class="tick" x2="-6" y2="0"></line><text x="-9" y="0" dy=".32em" text-anchor="end">600</text></g><g transform="translate(0,120.39745311645027)" style="opacity: 1;"><line class="tick" x2="-6" y2="0"></line><text x="-9" y="0" dy=".32em" text-anchor="end">700</text></g><g transform="translate(0,101.49480177087995)" style="opacity: 1;"><line class="tick" x2="-6" y2="0"></line><text x="-9" y="0" dy=".32em" text-anchor="end">800</text></g><g transform="translate(0,82.59215042530963)" style="opacity: 1;"><line class="tick" x2="-6" y2="0"></line><text x="-9" y="0" dy=".32em" text-anchor="end">900</text></g><g transform="translate(0,63.689499079739335)" style="opacity: 1;"><line class="tick" x2="-6" y2="0"></line><text x="-9" y="0" dy=".32em" text-anchor="end">1,000</text></g><path class="domain" d="M-6,50H0V250H-6"></path><text transform="rotate (90, -50, 0)" x="20" y="0">mean number of turnstile revolutions</text></g></svg></body></html>

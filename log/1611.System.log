@@ -1,0 +1,60 @@
+UTC+8 20161111_04:02:06	1478851326431	 : csv.php/handleCSV()	 : Cannot open the file.
+UTC+8 20161111_04:02:06	1478851326480	 : csv.php/handleCSV()	 : The File ./tmpData/4. Green Roof Property_Example for database.docxis not a CSV File
+UTC+8 20161111_04:02:06	1478851326481	 : upload.php/ 	 : File 14788513262. MeasureData_20140901-20140930_Part 2.csv Upload to ./Uploads/1611/
+UTC+8 20161111_04:02:06	1478851326495	 : upload.php/ 	 : File 14788513262. MeasureData_20140901-20140930_Part 2.csv is checked to be a data table with csv extention and be record in history. Prepare for update to database.
+UTC+8 20161111_04:06:22	1478851582483	 : csv.php/handleCSV()	 : Cannot open the file.
+UTC+8 20161111_04:06:22	1478851582484	 : csv.php/handleCSV()	 : The File ./tmpData/4. Green Roof Property_Example for database.docxis not a CSV File
+UTC+8 20161111_04:06:22	1478851582484	 : upload.php/ 	 : File 14788515821. WeatherData_20140901-20140930_Example for database.CSV.xlsx Upload to ./Uploads/1611/
+UTC+8 20161111_04:06:22	1478851582484	 : upload.php/ 	 : File 14788515821. WeatherData_20140901-20140930_Example for database.CSV.xlsx is checked to be a document with xlsx extention and be record in history.
+UTC+8 20161111_04:32:31	1478853151362	 : csv.php/handleCSV()	 : Cannot open the file.
+UTC+8 20161111_04:32:31	1478853151362	 : csv.php/handleCSV()	 : The File ./tmpData/4. Green Roof Property_Example for database.docxis not a CSV File
+UTC+8 20161111_04:32:31	1478853151362	 : upload.php/ 	 : File 14788531511. WeatherData_20140901-20140930_Example for database.CSV Upload to ./Uploads/1611/
+UTC+8 20161111_04:32:31	1478853151362	 : upload.php/ 	 : File 14788531511. WeatherData_20140901-20140930_Example for database.CSV is checked to be a data table with CSV extention and be record in history. Prepare for update to database.
+UTC+8 20161111_04:34:17	1478853257301	 : csv.php/handleCSV()	 : Cannot open the file.
+UTC+8 20161111_04:34:17	1478853257302	 : csv.php/handleCSV()	 : The File ./tmpData/4. Green Roof Property_Example for database.docxis not a CSV File
+UTC+8 20161111_04:34:17	1478853257302	 : upload.php/ 	 : File 14788532571. WeatherData_20140901-20140930_Example for database.CSV Upload to ./Uploads/1611/
+UTC+8 20161111_04:34:17	1478853257302	 : upload.php/ 	 : File 14788532571. WeatherData_20140901-20140930_Example for database.CSV is checked to be a data table with CSV extention and be record in history. Prepare for update to database.
+UTC+8 20161111_04:59:39	1478854779350	 : csv.php/handleCSV()	 : The File ./tmpData/4. Green Roof Property_Example for database.docxis not a CSV File
+UTC+8 20161111_04:59:39	1478854779350	 : upload.php/ 	 : File 14788547792. MeasureData_20140901-20140930_Part 1.csv Upload to ./Uploads/1611/
+UTC+8 20161111_04:59:39	1478854779350	 : upload.php/ 	 : File 14788547792. MeasureData_20140901-20140930_Part 1.csv is checked to be a data table with csv extention and be record in history. Prepare for update to database.
+UTC+8 20161111_04:59:55	1478854795128	 : csv.php/handleCSV()	 : The File ./tmpData/4. Green Roof Property_Example for database.docxis not a CSV File
+UTC+8 20161111_04:59:55	1478854795128	 : upload.php/ 	 : File 14788547952. MeasureData_20140901-20140930_Part 2.csv Upload to ./Uploads/1611/
+UTC+8 20161111_04:59:55	1478854795128	 : upload.php/ 	 : File 14788547952. MeasureData_20140901-20140930_Part 2.csv is checked to be a data table with csv extention and be record in history. Prepare for update to database.
+UTC+8 20161117_04:58:13	1479373093256	 : csv.php/handleCSV()	 : The File ./tmpData/4. Green Roof Property_Example for database.docxis not a CSV File
+UTC+8 20161117_04:58:13	1479373093331	 : upload.php/ 	 : File 14793730932. MeasureData_20140901-20140930_Part 2.csv Upload to ./Uploads/1611/
+UTC+8 20161117_04:58:13	1479373093349	 : upload.php/ 	 : File 14793730932. MeasureData_20140901-20140930_Part 2.csv is checked to be a data table with csv extention and be record in history. Prepare for update to database.
+UTC+8 20161117_05:04:48	1479373488706	 : csv.php/handleCSV()	 : The File ./tmpData/4. Green Roof Property_Example for database.docxis not a CSV File
+UTC+8 20161117_05:04:48	1479373488706	 : upload.php/ 	 : File 14793734882. MeasureData_20140901-20140930_Part 2.csv Upload to ./Uploads/1611/
+UTC+8 20161117_05:04:48	1479373488706	 : upload.php/ 	 : File 14793734882. MeasureData_20140901-20140930_Part 2.csv is checked to be a data table with csv extention and be record in history. Prepare for update to database.
+UTC+8 20161117_05:07:26	1479373646123	 : csv.php/handleCSV()	 : The File ./tmpData/4. Green Roof Property_Example for database.docxis not a CSV File
+UTC+8 20161117_05:07:26	1479373646123	 : upload.php/ 	 : File 14793736462. MeasureData_20140901-20140930_Part 2.csv Upload to ./Uploads/1611/
+UTC+8 20161117_05:07:26	1479373646123	 : upload.php/ 	 : File 14793736462. MeasureData_20140901-20140930_Part 2.csv is checked to be a data table with csv extention and be record in history. Prepare for update to database.
+UTC+8 20161117_05:10:37	1479373837394	 : csv.php/handleCSV()	 : The File ./tmpData/4. Green Roof Property_Example for database.docxis not a CSV File
+UTC+8 20161117_05:10:37	1479373837394	 : upload.php/ 	 : File 14793738372. MeasureData_20140901-20140930_Part 1.csv Upload to ./Uploads/1611/
+UTC+8 20161117_05:10:37	1479373837395	 : upload.php/ 	 : File 14793738372. MeasureData_20140901-20140930_Part 1.csv is checked to be a data table with csv extention and be record in history. Prepare for update to database.
+UTC+8 20161117_05:12:01	1479373921646	 : csv.php/handleCSV()	 : The File ./tmpData/4. Green Roof Property_Example for database.docxis not a CSV File
+UTC+8 20161117_05:12:01	1479373921646	 : upload.php/ 	 : File 14793739212. MeasureData_20140901-20140930_Part 1.csv Upload to ./Uploads/1611/
+UTC+8 20161117_05:12:01	1479373921646	 : upload.php/ 	 : File 14793739212. MeasureData_20140901-20140930_Part 1.csv is checked to be a data table with csv extention and be record in history. Prepare for update to database.
+UTC+8 20161117_05:12:27	1479373947160	 : csv.php/handleCSV()	 : The File ./tmpData/4. Green Roof Property_Example for database.docxis not a CSV File
+UTC+8 20161117_05:12:27	1479373947161	 : upload.php/ 	 : File 14793739472. MeasureData_20140901-20140930_Part 2.csv Upload to ./Uploads/1611/
+UTC+8 20161117_05:12:27	1479373947161	 : upload.php/ 	 : File 14793739472. MeasureData_20140901-20140930_Part 2.csv is checked to be a data table with csv extention and be record in history. Prepare for update to database.
+UTC+8 20161117_05:12:43	1479373963620	 : csv.php/handleCSV()	 : The File ./tmpData/4. Green Roof Property_Example for database.docxis not a CSV File
+UTC+8 20161117_05:12:43	1479373963620	 : upload.php/ 	 : File 14793739631. WeatherData_20140901-20140930_Example for database.CSV Upload to ./Uploads/1611/
+UTC+8 20161117_05:12:43	1479373963620	 : upload.php/ 	 : File 14793739631. WeatherData_20140901-20140930_Example for database.CSV is checked to be a data table with CSV extention and be record in history. Prepare for update to database.
+UTC+8 20161129_06:07:40	1480414061016	 : csv.php/handleCSV()	 : The File ./tmpData/4. Green Roof Property_Example for database.docxis not a CSV File
+UTC+8 20161129_06:07:41	1480414061075	 : upload.php/ 	 : File 14804140611. WeatherData_20140901-20140930_Example for database.CSV Upload to ./Uploads/1611/
+UTC+8 20161129_06:07:41	1480414061092	 : upload.php/ 	 : File 14804140611. WeatherData_20140901-20140930_Example for database.CSV is checked to be a data table with CSV extention and be record in history. Prepare for update to database.
+UTC+8 20161129_06:07:56	1480414076351	 : csv.php/handleCSV()	 : The File ./tmpData/4. Green Roof Property_Example for database.docxis not a CSV File
+UTC+8 20161129_06:07:56	1480414076352	 : upload.php/ 	 : File 14804140762. MeasureData_20140901-20140930_Part 2.csv Upload to ./Uploads/1611/
+UTC+8 20161129_06:07:56	1480414076352	 : upload.php/ 	 : File 14804140762. MeasureData_20140901-20140930_Part 2.csv is checked to be a data table with csv extention and be record in history. Prepare for update to database.
+UTC+8 20161129_06:09:08	1480414148901	 : csv.php/handleCSV()	 : The File ./tmpData/4. Green Roof Property_Example for database.docxis not a CSV File
+UTC+8 20161129_06:09:08	1480414148901	 : upload.php/ 	 : File 14804141482. MeasureData_20140901-20140930_Part 1.csv Upload to ./Uploads/1611/
+UTC+8 20161129_06:09:08	1480414148902	 : upload.php/ 	 : File 14804141482. MeasureData_20140901-20140930_Part 1.csv is checked to be a data table with csv extention and be record in history. Prepare for update to database.
+UTC+8 20161129_06:11:00	1480414260441	 : csv.php/handleCSV()	 : The File ./tmpData/4. Green Roof Property_Example for database.docxis not a CSV File
+UTC+8 20161129_06:11:00	1480414260441	 : upload.php/ 	 : Fail to Upload 
+UTC+8 20161129_06:11:16	1480414276225	 : csv.php/handleCSV()	 : The File ./tmpData/4. Green Roof Property_Example for database.docxis not a CSV File
+UTC+8 20161129_06:11:16	1480414276225	 : upload.php/ 	 : File 14804142762. MeasureData_20140901-20140930_Part 2.csv Upload to ./Uploads/1611/
+UTC+8 20161129_06:11:16	1480414276225	 : upload.php/ 	 : File 14804142762. MeasureData_20140901-20140930_Part 2.csv is checked to be a data table with csv extention and be record in history. Prepare for update to database.
+UTC+8 20161129_06:11:44	1480414304663	 : csv.php/handleCSV()	 : The File ./tmpData/4. Green Roof Property_Example for database.docxis not a CSV File
+UTC+8 20161129_06:11:44	1480414304663	 : upload.php/ 	 : File 14804143042. MeasureData_20140901-20140930_Part 1.csv Upload to ./Uploads/1611/
+UTC+8 20161129_06:11:44	1480414304663	 : upload.php/ 	 : File 14804143042. MeasureData_20140901-20140930_Part 1.csv is checked to be a data table with csv extention and be record in history. Prepare for update to database.
